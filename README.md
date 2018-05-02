@@ -18,5 +18,5 @@ Jade has been renamed to Pug so may want to use the updated [project](https://gi
 5. [gulp-autoprefixer](https://github.com/sindresorhus/gulp-autoprefixer) to add vendor prefixes to css files
 
 ### To run
-- Execute `npm install` from this directory to install dev dependencies.
-- Execute `gulp` to run all tasks, launch the browser sync local server and watch for changes.
+- Execute 'npm install' from this directory to install dev dependencies.
+- Execute 'gulp' to run all tasks, launch the browser sync local server and watch for changes.
