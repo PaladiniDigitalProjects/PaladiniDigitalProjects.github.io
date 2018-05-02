@@ -9,6 +9,8 @@ var gulp = require('gulp'),
 	sass = require('gulp-sass'),
 	browserSync = require('browser-sync');
 
+
+
 /*
 * Change directories here
 */
@@ -83,9 +85,34 @@ gulp.task('watch', function () {
 	gulp.watch(['*.jade', '**/*.jade', '**/*.json'], ['jade-rebuild']);
 });
 
+
+
+// Compile sass into CSS & auto-inject into browsers
+// gulp.task('boots', function() {
+// 		return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'])
+// 				.pipe(sass())
+// 				.pipe(gulp.dest("site/assets/css"))
+// 				.pipe(browserSync.stream());
+// });
+
+// Move the javascript files into our /src/js folder
+gulp.task('boots-js', function() {
+		return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/tether/dist/js/tether.min.js'])
+				.pipe(gulp.dest("site/assets/js"))
+				.pipe(browserSync.stream());
+});
+
+
+
+
 /**
  * Default task, running just `gulp` will compile the sass,
  * compile the jekyll site, launch BrowserSync then watch
  * files for changes
  */
-gulp.task('default', ['browser-sync', 'watch']);
+
+
+
+
+
+gulp.task('default', ['browser-sync', 'watch', 'boots-js']);

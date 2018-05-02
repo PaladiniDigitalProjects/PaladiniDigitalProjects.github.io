@@ -29,5 +29,8 @@
     "gulp",
     "sass",
     "browsersync"
-  ]
+  ],
+  "dependencies": {
+    "bootstrap": "^4.1.1"
+  }
 }
