@@ -1,0 +1,16 @@
+doctype html
+html(lang='es')
+  meta(charset='utf-8')
+  head
+    title
+    link(rel="stylesheet" href="site/assets/css/bootstrap.css")
+    link(rel="stylesheet" href="site/assets/css/style.css")
+  body
+    .container-fluid
+      .row
+        .col-12.col-sm-3.col-md-3
+          include layouts/menu
+        .xs-hidden.col-sm-9.col-md-9
+          include layouts/main
+              
+    include layouts/footer

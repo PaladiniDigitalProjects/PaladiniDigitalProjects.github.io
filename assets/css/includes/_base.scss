@@ -1,0 +1,55 @@
+/*	FONTS
+------------------------*/
+// @import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+
+/*	TYPOGRAPHY
+–––––––––––––––––––––––––––*/
+body {
+	font-family:Helvetica, sans-serif, ;
+	color: #000;
+	font-size: 100%;
+	line-height: 1.5;
+	background-color: #fff;
+	margin: 0;
+	padding-top: 2rem;
+	a {
+		color:#000;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+/* ------ Normalize ----- */
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+ul,
+ul li {
+	list-style-type: none;
+	padding: 0;
+	line-height: 1.5;
+	margin-bottom: 0.5rem;
+	ul {
+		margin-left: 1rem;
+		li {
+			font-size: 0.9rem;
+			line-height: 1.75;
+			margin-bottom: 0;
+		}
+	}
+}
+
+.site-title,
+.page-title {
+	max-width: 200px;
+	font-size: 1.5rem;
+	line-height: 1.35rem;
+	font-weight: bold;
+	display:block;
+	margin: 0 0 2rem 0;
+	letter-spacing: 0.05rem;
+}

@@ -1,1 +1,62 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);body{font-family:"Raleway",Arial,sans-serif;color:#555;font-size:100%;line-height:1.5;background-color:#f2f2f2;margin:0}*,*:after,*:before{-webkit-box-sizing:border-box;box-sizing:border-box}header h1{font-weight:300;text-align:center;font-size:60px;background:gold}
+@charset "UTF-8";
+.footer-menu {
+  width: 100%; }
+  .footer-menu li {
+    padding: 0 1rem 0 0;
+    display: inline-block;
+    font-size: 0.8rem; }
+
+.menu-nav {
+  padding: 0 1rem 2rem 0; }
+  .menu-nav span {
+    display: inline-block;
+    margin-left: 1rem;
+    color: silver; }
+
+/*	FONTS
+------------------------*/
+/*	TYPOGRAPHY
+–––––––––––––––––––––––––––*/
+body {
+  font-family: Helvetica, sans-serif;
+  color: #000;
+  font-size: 100%;
+  line-height: 1.5;
+  background-color: #fff;
+  margin: 0;
+  padding-top: 2rem; }
+  body a {
+    color: #000; }
+    body a:hover {
+      text-decoration: underline; }
+
+/* ------ Normalize ----- */
+*,
+*:after,
+*:before {
+  box-sizing: border-box; }
+
+ul,
+ul li {
+  list-style-type: none;
+  padding: 0;
+  line-height: 1.5;
+  margin-bottom: 0.5rem; }
+  ul ul,
+  ul li ul {
+    margin-left: 1rem; }
+    ul ul li,
+    ul li ul li {
+      font-size: 0.9rem;
+      line-height: 1.75;
+      margin-bottom: 0; }
+
+.site-title,
+.page-title {
+  max-width: 200px;
+  font-size: 1.5rem;
+  line-height: 1.35rem;
+  font-weight: bold;
+  display: block;
+  margin: 0 0 2rem 0;
+  letter-spacing: 0.05rem; }
