@@ -51,8 +51,7 @@ ul li {
       line-height: 1.75;
       margin-bottom: 0; }
 
-.site-title,
-.page-title {
+.site-title {
   max-width: 200px;
   font-size: 1.5rem;
   line-height: 1.35rem;
@@ -60,3 +59,23 @@ ul li {
   display: block;
   margin: 0 0 2rem 0;
   letter-spacing: 0.05rem; }
+
+.page-title {
+  font-size: 3rem;
+  max-width: 50%;
+  font-weight: bold;
+  display: block;
+  margin: 0 0 4rem 0;
+  letter-spacing: 0.05rem; }
+
+.subtitulo {
+  font-size: 1.35rem; }
+
+blockquote {
+  padding: 3rem;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  max-width: 40%;
+  margin: 0 auto; }
+  blockquote cite {
+    color: silver; }
