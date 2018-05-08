@@ -1,8 +1,86 @@
-.menu-nav {
-  padding: 0 1rem 2rem 0;
+#nav_list {
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+}
+
+.pushmenu { /*this is the nav*/
+  text-align: left;
+  width: 15rem;
+  height: 100%;
+  top: 0;
+  z-index: 1000;
+  position: fixed;
+  background: #f1f1f1;
+}
+
+.pushmenu h3 {
+  color: #f1f1f1;
+  font-size: 1.3em;
+  font-weight: 400;
+  padding: 15px 25px;
+  margin: 0;
+  height: 16px;
+}
+
+.links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 0 5%;
+
+ li {
+  position: relative;
+  display: block; /* drops the nav vertically*/
+  color: #000;
+  font-size: 1em;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 0;
+
   span {
+    color:grey;
     display: inline-block;
     margin-left: 1rem;
-    color:silver;
   }
+    ul{
+      margin-bottom: 1.5rem;
+      li a{
+        font-family: 'Cutive Mono', monospace;
+        line-height: 1;
+  display: block; margin-bottom: 0.5rem;
+      }
+
+    }
+  }
+}
+
+.pushmenu-left { left: -15rem; }
+
+.pushmenu-left.pushmenu-open { left: 0; }
+
+.pushmenu-push {
+  overflow-x: hidden;
+  position: relative;
+  left: 0;
+}
+
+.pushmenu-push-toright { left: 15rem; }
+
+.pushmenu, .pushmenu-push {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+
+nav-list.active { background-position: -20rem top; }
+
+.buttonset {
+  color:#000;
+  height: 16px;
+  padding: 10px 20px 20px;
+}
+
+section.content {
+  padding: 10px 20px;
 }

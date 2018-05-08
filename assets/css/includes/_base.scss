@@ -4,8 +4,10 @@
 
 /*	TYPOGRAPHY
 –––––––––––––––––––––––––––*/
+
+
 body {
-	font-family:Helvetica, sans-serif, ;
+	font-family:'Akkurat-Regular';
 	color: #000;
 	font-size: 100%;
 	line-height: 1.5;
@@ -44,13 +46,14 @@ ul li {
 }
 
 .site-title {
-	max-width: 200px;
-	font-size: 1.5rem;
-	line-height: 1.35rem;
+	max-width: 15rem;
+	font-size: 1.25rem;
+	line-height: 1.25rem;
 	font-weight: bold;
 	display:block;
-	margin: 0 0 2rem 0;
+	margin: 1rem;
 	letter-spacing: 0.05rem;
+	text-transform: uppercase;
 }
 
 .page-title {

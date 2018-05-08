@@ -1,16 +1,31 @@
 doctype html
-html(lang='es')
-  meta(charset='utf-8')
+html(lang='en')
   head
-    title
+    title Diseño de sistemas
+    meta(charset='UTF-8')
+    meta(name='author', content='Paladini Digital Projects')
+      
     link(rel="stylesheet" href="site/assets/css/bootstrap.css")
     link(rel="stylesheet" href="site/assets/css/style.css")
-  body
-    .container-fluid
-      .row
-        .col-12.col-sm-3.col-md-3
-          include layouts/menu
-        .xs-hidden.col-sm-9.col-md-9
-          include layouts/main
-              
+    link(href='https://fonts.googleapis.com/css?family=Cutive+Mono', rel='stylesheet')
+
+      
+    script(src='site/assets/js/jquery-1.12.4.min.js')
+          
+  body.pushmenu-push
+    nav.pushmenu.pushmenu-left
+      include layouts/menu
+    #nav_list
+      include layouts/main
+      hr
+      footer.container-fluid
+        ul.footer-menu
+          li
+            a(href="#") Feedback
+          li
+            a(href='#') Privacidad
+          li
+            a(href='#') Diccionario de términos
+          li
+            a(href='#') Referencias          
     include layouts/footer

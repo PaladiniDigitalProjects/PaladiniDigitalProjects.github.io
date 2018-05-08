@@ -1,0 +1,60 @@
+/* AKKURAT REGULAR */
+
+@font-face {
+  font-family: 'Akkurat-Regular';
+  src: url('../fonts/Akkurat_Regular_Pro.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Akkurat_Regular_Pro.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Akkurat_Regular_Pro.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Akkurat_Regular_Pro.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Akkurat_Regular_Pro.svg#3478686034630b6bbb8f4a5751bfe071') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  400;
+}
+
+/* AKKURAT LIGHT */
+
+@font-face {
+  font-family: 'Akkurat-Light';
+  src: url('../fonts/Akkurat-Light.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Akkurat-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Akkurat-Light.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Akkurat-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Akkurat-Light.svg#ae05ff48a0f16a99523b1f8725269aec') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  200;
+}
+
+
+/* AKKURAT BOLD */
+
+@font-face {
+  font-family: 'Akkurat-Bold';
+  src: url('../fonts/Akkurat_Bold_Pro.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Akkurat_Bold_Pro.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Akkurat_Bold_Pro.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Akkurat_Bold_Pro.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Akkurat_Bold_Pro.svg#8e4ac6878de559e681f53263f7ebda33') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  700;
+}
+
+/* AKKURAT ITALIC */
+
+@font-face {
+  font-family:'Akkurat-Italic';
+  src: url('../fonts/AkkuratItalic.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/AkkuratItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/AkkuratItalic.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/AkkuratItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/AkkuratItalic.svg#5811b6164f599214c89c0e9fdb08d3dc') format('svg'); /* Legacy iOS */
+
+  font-style:   italic;
+  font-weight:  400;
+}
+
+.mono {
+  font-family: 'Cutive Mono', monospace;
+}

@@ -1,4 +1,47 @@
 @charset "UTF-8";
+/* AKKURAT REGULAR */
+@font-face {
+  font-family: 'Akkurat-Regular';
+  src: url("../fonts/Akkurat_Regular_Pro.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Akkurat_Regular_Pro.eot?#iefix") format("embedded-opentype"), url("../fonts/Akkurat_Regular_Pro.woff") format("woff"), url("../fonts/Akkurat_Regular_Pro.ttf") format("truetype"), url("../fonts/Akkurat_Regular_Pro.svg#3478686034630b6bbb8f4a5751bfe071") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400; }
+
+/* AKKURAT LIGHT */
+@font-face {
+  font-family: 'Akkurat-Light';
+  src: url("../fonts/Akkurat-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Akkurat-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Akkurat-Light.woff") format("woff"), url("../fonts/Akkurat-Light.ttf") format("truetype"), url("../fonts/Akkurat-Light.svg#ae05ff48a0f16a99523b1f8725269aec") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 200; }
+
+/* AKKURAT BOLD */
+@font-face {
+  font-family: 'Akkurat-Bold';
+  src: url("../fonts/Akkurat_Bold_Pro.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Akkurat_Bold_Pro.eot?#iefix") format("embedded-opentype"), url("../fonts/Akkurat_Bold_Pro.woff") format("woff"), url("../fonts/Akkurat_Bold_Pro.ttf") format("truetype"), url("../fonts/Akkurat_Bold_Pro.svg#8e4ac6878de559e681f53263f7ebda33") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 700; }
+
+/* AKKURAT ITALIC */
+@font-face {
+  font-family: 'Akkurat-Italic';
+  src: url("../fonts/AkkuratItalic.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/AkkuratItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/AkkuratItalic.woff") format("woff"), url("../fonts/AkkuratItalic.ttf") format("truetype"), url("../fonts/AkkuratItalic.svg#5811b6164f599214c89c0e9fdb08d3dc") format("svg");
+  /* Legacy iOS */
+  font-style: italic;
+  font-weight: 400; }
+
+.mono {
+  font-family: 'Cutive Mono', monospace; }
+
 .footer-menu {
   width: 100%; }
   .footer-menu li {
@@ -6,19 +49,90 @@
     display: inline-block;
     font-size: 0.8rem; }
 
-.menu-nav {
-  padding: 0 1rem 2rem 0; }
-  .menu-nav span {
-    display: inline-block;
-    margin-left: 1rem;
-    color: silver; }
+#nav_list {
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem; }
+
+.pushmenu {
+  /*this is the nav*/
+  text-align: left;
+  width: 15rem;
+  height: 100%;
+  top: 0;
+  z-index: 1000;
+  position: fixed;
+  background: #f1f1f1; }
+
+.pushmenu h3 {
+  color: #f1f1f1;
+  font-size: 1.3em;
+  font-weight: 400;
+  padding: 15px 25px;
+  margin: 0;
+  height: 16px; }
+
+.links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 0 5%; }
+  .links li {
+    position: relative;
+    display: block;
+    /* drops the nav vertically*/
+    color: #000;
+    font-size: 1em;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 0; }
+    .links li span {
+      color: grey;
+      display: inline-block;
+      margin-left: 1rem; }
+    .links li ul {
+      margin-bottom: 1.5rem; }
+      .links li ul li a {
+        font-family: 'Cutive Mono', monospace;
+        line-height: 1;
+        display: block;
+        margin-bottom: 0.5rem; }
+
+.pushmenu-left {
+  left: -15rem; }
+
+.pushmenu-left.pushmenu-open {
+  left: 0; }
+
+.pushmenu-push {
+  overflow-x: hidden;
+  position: relative;
+  left: 0; }
+
+.pushmenu-push-toright {
+  left: 15rem; }
+
+.pushmenu, .pushmenu-push {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+nav-list.active {
+  background-position: -20rem top; }
+
+.buttonset {
+  color: #000;
+  height: 16px;
+  padding: 10px 20px 20px; }
+
+section.content {
+  padding: 10px 20px; }
 
 /*	FONTS
 ------------------------*/
 /*	TYPOGRAPHY
 –––––––––––––––––––––––––––*/
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: 'Akkurat-Regular';
   color: #000;
   font-size: 100%;
   line-height: 1.5;
@@ -52,13 +166,14 @@ ul li {
       margin-bottom: 0; }
 
 .site-title {
-  max-width: 200px;
-  font-size: 1.5rem;
-  line-height: 1.35rem;
+  max-width: 15rem;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
   font-weight: bold;
   display: block;
-  margin: 0 0 2rem 0;
-  letter-spacing: 0.05rem; }
+  margin: 1rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase; }
 
 .page-title {
   font-size: 3rem;
