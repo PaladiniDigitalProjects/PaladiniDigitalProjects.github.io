@@ -5,6 +5,11 @@
 /*	TYPOGRAPHY
 –––––––––––––––––––––––––––*/
 
+.container {
+	max-width: 100% !important;
+	width: 100% !important;
+}
+
 
 body {
 	font-family:'Akkurat-Regular';
@@ -57,11 +62,12 @@ ul li {
 }
 
 .page-title {
-	font-size: 3rem;
-	max-width: 50%;
+	font-size: 4rem;
+	line-height: 0.95;
+	margin-right: 15rem;
 	font-weight: bold;
 	display:block;
-	margin: 0 0 4rem 0;
+	margin: 1rem 0 4rem 0;
 	letter-spacing: 0.05rem;
 }
 
@@ -78,4 +84,9 @@ blockquote {
 	cite {
 		color:silver;
 	}
+}
+
+.img-responsive {
+	width: 100%;
+	height: auto;
 }

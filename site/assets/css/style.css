@@ -53,6 +53,8 @@
   position: absolute;
   top: 0.5rem;
   left: 1rem; }
+  #nav_list p {
+    font-size: 2rem; }
 
 .pushmenu {
   /*this is the nav*/
@@ -86,7 +88,7 @@
     text-decoration: none;
     padding: 0; }
     .links li span {
-      color: grey;
+      color: blue;
       display: inline-block;
       margin-left: 1rem; }
     .links li ul {
@@ -121,16 +123,24 @@ nav-list.active {
 
 .buttonset {
   color: #000;
-  height: 16px;
-  padding: 10px 20px 20px; }
+  left: -1rem;
+  top: -1rem;
+  position: absolute;
+  font-size: 2rem;
+  width: 40px;
+  z-index: 999; }
 
-section.content {
-  padding: 10px 20px; }
+.content {
+  margin-top: 2rem; }
 
 /*	FONTS
 ------------------------*/
 /*	TYPOGRAPHY
 –––––––––––––––––––––––––––*/
+.container {
+  max-width: 100% !important;
+  width: 100% !important; }
+
 body {
   font-family: 'Akkurat-Regular';
   color: #000;
@@ -176,11 +186,12 @@ ul li {
   text-transform: uppercase; }
 
 .page-title {
-  font-size: 3rem;
-  max-width: 50%;
+  font-size: 4rem;
+  line-height: 0.95;
+  margin-right: 15rem;
   font-weight: bold;
   display: block;
-  margin: 0 0 4rem 0;
+  margin: 1rem 0 4rem 0;
   letter-spacing: 0.05rem; }
 
 .subtitulo {
@@ -194,3 +205,7 @@ blockquote {
   margin: 0 auto; }
   blockquote cite {
     color: silver; }
+
+.img-responsive {
+  width: 100%;
+  height: auto; }

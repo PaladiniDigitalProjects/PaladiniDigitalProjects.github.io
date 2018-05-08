@@ -2,6 +2,9 @@
   position: absolute;
   top: 0.5rem;
   left: 1rem;
+  p {
+    font-size: 2rem;
+  }
 }
 
 .pushmenu { /*this is the nav*/
@@ -38,7 +41,7 @@
   padding: 0;
 
   span {
-    color:grey;
+    color:blue;
     display: inline-block;
     margin-left: 1rem;
   }
@@ -76,11 +79,19 @@
 nav-list.active { background-position: -20rem top; }
 
 .buttonset {
-  color:#000;
-  height: 16px;
-  padding: 10px 20px 20px;
+  color: #000;
+  left: -1rem;
+  top: -1rem;
+  position: absolute;
+  font-size: 2rem;
+  width: 40px;
+  z-index: 999;
+}
+
+.content {
+  margin-top: 2rem;
 }
 
 section.content {
-  padding: 10px 20px;
+  // padding: 10px 20px;
 }
