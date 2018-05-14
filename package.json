@@ -1,36 +1,32 @@
 {
-  "name": "gulp-jade-sass-starter",
-  "version": "0.1.0",
-  "description": "A Jade and Sass starter project using gulp for task automation.",
-  "main": "gulpfile.js",
+  "name": "Design responsive systems",
+  "description": "",
+  "version": "1.2",
+  "homepage": "https://paladinidigitalprojects.github.io/",
+  "keywords": "gulp, less, jade, node, skeleton",
+  "license": "MIT",
   "author": {
-    "name": "Joshua Azemoh",
-    "email": "buzzme46@gmail.com",
-    "url": "https://github.com/azemoh"
-  },
-  "scripts": {
-    "start": "gulp",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "devDependencies": {
-    "browser-sync": "^2.9.3",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.0.1",
-    "gulp-data": "^1.2.0",
-    "gulp-jade": "^1.0.1",
-    "gulp-sass": "^2.0.4"
+    "name": "Daniel Paladini",
+    "email": "daniel@paladini.cat",
+    "url": "http://www.paladini.cat"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/azemoh/gulp-jade-sass-starter.git"
+    "url": "https://paladinidigitalprojects.github.io/"
   },
-  "keywords": [
-    "jade",
-    "gulp",
-    "sass",
-    "browsersync"
-  ],
-  "dependencies": {
-    "bootstrap": "^4.1.1"
+  "bugs": {
+    "url": "https://paladinidigitalprojects.github.io/issues",
+    "email": "daniel@paladini.cat"
+  },
+  "scripts": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "~5.0",
+    "gulp-cssmin": "~0.1.7",
+    "gulp-imagemin": "~3.2",
+    "gulp-jade": "~1.1",
+    "gulp-less": "~3.3",
+    "gulp-rename": "~1.2",
+    "gulp-uglify": "~2.1"
   }
 }
