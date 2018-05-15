@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#menu").click(function(){$(this).toggleClass("menu-on"),$(".menu-sidebar").toggleClass("active-sidebar"),$("#main").toggleClass("active-sidebar")})});

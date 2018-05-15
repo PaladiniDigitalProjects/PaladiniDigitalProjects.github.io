@@ -1,0 +1,55 @@
+/* COLORS */
+
+
+$primary:gold;
+$secondary:orange;
+$tertiary:pink;
+
+$white: #ffffff;
+$black: #343434;
+$silver: #f1f1f1;
+$grey: grey;
+
+// $container-max-widths:100%;
+
+
+// MEDIA QUERY BREAKPOINTS
+$breakpoint-xs: 320px;
+$breakpoint-sm: 480px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+
+
+@mixin media($media) {
+  @if $media == xs {
+    @media (min-width: $breakpoint-sm) { @content; }
+  }
+  @else if $media == sm {
+    @media (min-width: $breakpoint-md) { @content; }
+  }
+  @else if $media == md {
+    @media (min-width: $breakpoint-lg) { @content; }
+  }
+  @else if $media == lg {
+    @media (min-width: $breakpoint-xl) { @content; }
+  }
+}
+
+// APLICACIÓ
+//
+// @include media(xs) {
+//   property: value;
+// }
+
+
+$primary-font: "Akkurat-Regular", "Helvetica", sans-serif;
+$secondary-font: "Roboto Mono", monospace;
+
+/* MIXIN REM SIZE */
+
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue/10) + rem;
+  font-size: ($sizeValue) + px;
+}

@@ -1,0 +1,72 @@
+/* RESET */
+@import "reset.scss";
+/* VARIABLES */
+@import "variables.scss";
+
+/* PAGE BASICS */
+
+html {
+  font-size: 62.5%; /* Sets up the Base 10 stuff */
+}
+
+body {
+	font-family: $primary-font;
+	line-height: 1;
+
+	a {
+		color:$black;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+  hr {
+    margin:2rem;
+    background: #bbb;
+    height: 1px;
+    border:none;
+  }
+}
+
+/* Bootstrap GRID */
+@import "grid.scss";
+
+/* FONTS */
+@import "fonts.scss";
+
+/* MENU */
+@import "menu.scss";
+
+/* FOOTER */
+@import "footer.scss";
+
+
+.page-header {
+  margin:2rem 1rem;
+
+	@include media(lg){
+    margin: 3rem 2rem 2rem 3rem;
+  }
+
+}
+
+
+/* IMG */
+
+img.img-responsive {
+	width: 100%;
+	height: auto;
+}
+
+
+/* TYPOGRAPHY */
+
+.page-title {
+	@include font-size(24);
+  font-weight: bold;
+
+	@include media(lg){
+		@include font-size(40);
+	}
+}

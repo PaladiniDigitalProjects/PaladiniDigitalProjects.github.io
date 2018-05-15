@@ -1,0 +1,33 @@
+.page-footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background:$white;
+	border-top:1px solid #ddd;
+	@include font-size(14);
+
+	ul {
+		li {
+			display: inline-block;
+			line-height: 3;
+			margin: 1rem 2rem;
+			&.prev {
+				float: left;
+			}
+
+			&.next {
+				float: right;
+			}
+			span {
+				display:none;
+				color:$grey;
+				padding: 0 1rem;
+			}
+		}
+	}
+
+	@include media(lg){
+		left: 15%;
+	}
+}
