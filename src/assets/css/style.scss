@@ -41,14 +41,23 @@ body {
 /* FOOTER */
 @import "footer.scss";
 
-
 .page-header {
   margin:2rem 1rem;
 
 	@include media(lg){
     margin: 3rem 2rem 2rem 3rem;
   }
+}
 
+.section {
+  margin:1rem;
+  p {
+    @include font-size(16);
+    line-height: 1.2;
+  }
+  @include media(lg){
+    margin: 3rem 2rem 2rem 3rem;
+  }
 }
 
 
