@@ -17,8 +17,12 @@ nav.menu-sidebar {
     @include font-size(16);
     margin:2rem 1rem 2rem 2rem;
     text-transform: uppercase;
-    font-family: $secondary-font;
-    padding-right: 10rem;
+    font-family: $primary-font;
+    font-weight: bold;
+    // font-family: $primary-font;
+    padding-right: 8rem;
+    line-height: 1.1;
+    letter-spacing: 0.05rem;
   }
 
     &.active-sidebar{
