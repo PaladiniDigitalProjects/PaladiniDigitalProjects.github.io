@@ -2335,13 +2335,13 @@ nav.menu-sidebar {
   right: 0;
   width: 100%;
   height: 100vh;
-  overflow-y: auto; }
+  overflow-y: auto;
+  padding-bottom: 4rem; }
   #main.active-sidebar {
-    opacity: 0.3;
-    background: #343434; }
+    opacity: 0.25; }
   @media (min-width: 1200px) {
     #main {
-      width: 81%;
+      width: 82%;
       left: 18%;
       right: 0;
       background: #ffffff; } }
@@ -2349,11 +2349,39 @@ nav.menu-sidebar {
 /* ARTICLE */
 /* ARTICLE */
 .article {
-  margin: 3rem 2rem; }
+  margin: 3rem 0 6rem; }
+  .article .container {
+    border-bottom: 1px solid #ddd; }
   .article p {
     font-size: 1.6rem;
     font-size: 16px;
-    line-height: 1.3; }
+    line-height: 1.4;
+    margin-bottom: 2rem;
+    display: block;
+    color: #5e5e5e; }
+  .article .article-title {
+    font-size: 2rem;
+    font-size: 20px;
+    line-height: 1.3;
+    font-weight: normal;
+    margin-bottom: 1rem; }
+  .article .card .card-title {
+    font-size: 1.9rem;
+    font-size: 19px;
+    margin-bottom: 1rem; }
+  .article .card.card-volumen {
+    padding: 1rem;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25); }
+    .article .card.card-volumen figure {
+      margin: -1rem -1rem 1rem -1rem; }
+  @media (min-width: 1200px) {
+    .article .article-title {
+      font-size: 2.4rem;
+      font-size: 24px;
+      line-height: 1.2;
+      font-weight: normal; } }
 
 /* FOOTER */
 .page-footer {
@@ -2383,14 +2411,19 @@ nav.menu-sidebar {
 
 /* LAYOUT */
 .page-header {
-  margin: 6rem 2rem; }
+  margin: 0 0 6rem 0; }
+  @media (min-width: 1200px) {
+    .page-header {
+      margin: 0 2rem 6rem; } }
 
 .section {
   margin: 1rem; }
   .section p {
     font-size: 1.6rem;
     font-size: 16px;
-    line-height: 1.2; }
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    display: block; }
   @media (min-width: 1200px) {
     .section {
       margin: 3rem 2rem 2rem 3rem; } }
@@ -2398,9 +2431,11 @@ nav.menu-sidebar {
 .container {
   width: 100%;
   max-width: 900px;
-  margin: 2rem auto;
-  padding-right: 0;
-  padding-left: 0; }
+  margin: 2rem auto; }
+  @media (min-width: 1200px) {
+    .container {
+      padding-right: 0;
+      padding-left: 0; } }
 
 /* IMG */
 img {
@@ -2415,11 +2450,22 @@ img.img-responsive {
   width: 100%;
   height: auto; }
 
+figure {
+  margin: 1rem 0; }
+  figure img {
+    border: 1px solid #ddd; }
+  figure figcaption {
+    color: grey;
+    font-size: 1.4rem;
+    font-size: 14px;
+    line-height: 1.3;
+    padding: 0.5rem 0; }
+
 /* TYPOGRAPHY */
 .page-title {
   font-size: 3.2rem;
   font-size: 32px;
-  font-weight: bold; }
+  font-weight: normal; }
   @media (min-width: 1200px) {
     .page-title {
       font-size: 5rem;
