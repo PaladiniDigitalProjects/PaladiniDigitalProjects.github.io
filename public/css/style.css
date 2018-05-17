@@ -2464,6 +2464,9 @@ figure {
     line-height: 1.3;
     padding: 0.5rem 0; }
 
+.no-border {
+  border: none !important; }
+
 /* TYPOGRAPHY */
 .page-title {
   font-size: 3.2rem;
