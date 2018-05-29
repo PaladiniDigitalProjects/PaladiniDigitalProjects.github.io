@@ -38,6 +38,8 @@ body {
 /* MENU */
 @import "menu.scss";
 
+/* ARTICLE */
+@import "home.scss";
 
 /* ARTICLE */
 @import "article.scss";
@@ -50,7 +52,7 @@ body {
 .page-header {
   margin:0 0 6rem 0;
 	@include media(lg){
-    margin:0 2rem 6rem;
+    margin:2rem 2rem 6rem 4rem;
   }
 }
 
@@ -70,11 +72,16 @@ body {
 .container {
   width: 100%;
   max-width: 900px;
-  margin:2rem auto;
+  margin:2rem 0.5rem;
 
   @include media(lg){
     padding-right: 0;
     padding-left: 0;
+    margin-left:4rem;
+  }
+
+  @include media(xl){
+    margin:2rem auto;
   }
 }
 
@@ -95,10 +102,16 @@ img.img-responsive {
 	height: auto;
 }
 
+img.img-svg {
+  width: 100%;
+	height: auto;
+  background: transparent !important;
+}
+
 figure {
   margin: 1rem 0;
   img {
-    border:1px solid $light-grey;;
+    border:1px solid $light-grey;
   }
   figcaption {
     color:$grey;
@@ -116,6 +129,7 @@ figure {
 .page-title {
 	@include font-size(32);
   font-weight: normal;
+
 
 	@include media(lg){
 		@include font-size(50);

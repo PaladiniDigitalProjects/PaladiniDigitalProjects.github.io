@@ -1,0 +1,32 @@
+/* ARTICLE */
+.apertura-seccion {
+  background: $black;
+  height: 100vh;
+  color:$white;
+  margin: 0 !important;
+  padding: 2rem;
+
+  #main {
+    background: none;
+  }
+
+  p { color:$white !important; }
+
+	@include media(lg){
+    .article-title {
+      @include font-size(24);
+      line-height: 1.2;
+      font-weight: normal;
+    }
+  }
+}
+
+.page-footer{
+  &.footer-seccion {
+    border-top:1px solid grey;
+    background: $black;
+    a {
+      color:$white;
+    }
+  }
+}

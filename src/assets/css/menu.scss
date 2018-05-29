@@ -12,17 +12,30 @@ nav.menu-sidebar {
   border-right: 1px solid $light-grey;
 
 
-
   .page-title {
     @include font-size(16);
-    margin:2rem 1rem 2rem 2rem;
+    margin:1rem 0 2rem;
+    padding: 1rem 2rem 1rem 2rem;
     text-transform: uppercase;
     font-family: $primary-font;
     font-weight: bold;
-    // font-family: $primary-font;
-    padding-right: 8rem;
     line-height: 1.1;
     letter-spacing: 0.05rem;
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid $black;
+
+    a {
+      span {
+        display: block;
+        float: left;
+        width: 70%;
+      }
+      .img-svg {
+        max-width: 40px;
+        margin-right: 50px;
+      }
+    }
   }
 
     &.active-sidebar{
@@ -31,7 +44,7 @@ nav.menu-sidebar {
       overflow-y: auto;
       #menu {
         right: 10px;
-        background: url(../images/menu-tancar.svg) center center no-repeat;
+        background: url(../images/menu-tancar.svg) center center no-repeat !important;
         background-size: 20px 20px;
       }
     }
@@ -42,6 +55,16 @@ nav.menu-sidebar {
     position: fixed;
     background: $silver;
     overflow-y:auto;
+
+    .page-title {
+      a {
+        .img-svg {
+          margin-right: 0;
+          float: right;
+          max-width:60px;
+        }
+      }
+    }
   }
 
   #menu {
@@ -102,6 +125,12 @@ ul {
   }
 }
 
+.apertura-seccion {
+  #menu{
+    background: url(../images/menu-white.svg) center center no-repeat !important;
+  }
+}
+
 #main {
   position: absolute;
   top: 0;
@@ -109,7 +138,7 @@ ul {
   width: 100%;
   height: 100vh;
   overflow-y: auto;
-  padding-bottom: 4rem;
+  // padding-bottom: 4rem;
 
   &.active-sidebar{
     opacity: 0.25;
@@ -121,5 +150,4 @@ ul {
     right: 0;
     background: $white;
   }
-
 }
