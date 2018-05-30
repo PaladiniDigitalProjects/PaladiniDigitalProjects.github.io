@@ -1,0 +1,35 @@
+/* SLIDER */
+
+.slider {
+  position: relative;
+  .owl-carousel {
+    position: relative;
+    .owl-nav {
+      position: absolute;
+      top: 41%;
+      width: 114%;
+      margin-left: -7%;
+
+      button.owl-prev,
+      button.owl-next {
+        width: 20px;
+      }
+
+      button.owl-next {
+        right: 0;
+        position: absolute;
+      }
+    }
+  .owl-dots { display:none;}
+  }
+
+  .slider-counter {
+    position: absolute;
+    @include font-size(14);
+    bottom: 2rem;
+    left: 0;
+    position: absolute;
+    background: $white;
+    z-index: 1;
+  }
+}

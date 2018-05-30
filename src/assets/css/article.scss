@@ -5,7 +5,7 @@
   margin: 3rem 0 6rem;
 
   .container {
-    border-bottom: 1px solid $light-grey;
+    // border-bottom: 1px solid $light-grey;
   }
 
   p {
@@ -34,6 +34,12 @@
   .definition-list {
     @include font-size(16);
     line-height: 2;
+    &.definition,
+    &.definition p {
+      dt{ margin-bottom: 2rem}
+      @include font-size(24);
+      padding-right: 3rem;
+    }
   }
 
   .destacado {
@@ -49,9 +55,6 @@
   .center {text-align: center;}
   .right {text-align: right;}
 
-  strong {
-    font-weight: bold;
-  }
   .card {
     figure {
       margin-bottom: 2rem;

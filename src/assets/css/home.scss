@@ -6,13 +6,43 @@
   margin: 0 !important;
   padding: 2rem;
 
-  #main {
+  #main{
     background: none;
-  }
+   .article{
+    .page-title{
+      @include font-size(34);
+        margin:2rem 0;
 
+      }
+    ul.list{
+      display:block;
+      margin-bottom:3rem;
+      li {
+        @include font-size(18);
+        line-height: 2;
+        display: block;
+        font-family: $primary-light;
+        }
+      }
+    }
+  }
   p { color:$white !important; }
 
-	@include media(lg){
+  @include media(sm) {
+  #main{
+    .article{
+     .page-title{
+       @include font-size(52);
+        line-height: 1;
+        margin:0 0 2rem 0;
+       }
+     ul.list li {
+       @include font-size(20);
+       }
+     }
+  }
+}
+@include media(lg) {
     .article-title {
       @include font-size(24);
       line-height: 1.2;

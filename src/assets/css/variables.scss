@@ -7,8 +7,8 @@ $tertiary:pink;
 
 $white: #ffffff;
 $black: #343434;
-$silver: #f1f1f1;
-$grey: grey;
+$silver: #e8e8e8;
+$grey: #8b8b8b;
 $light-grey:#ddd;
 
 // $container-max-widths:100%;
@@ -46,6 +46,10 @@ $breakpoint-xl: 1200px;
 
 
 $primary-font: "Akkurat-Regular", "Helvetica", sans-serif;
+$primary-light: "Akkurat-Light", "Helvetica", sans-serif;
+$primary-bold: "Akkurat-Bold", "Helvetica", sans-serif;
+$primary-italic: "Akkurat-Italic", "Helvetica", sans-serif;
+
 $secondary-font: "Roboto Mono", monospace;
 
 /* MIXIN REM SIZE */
