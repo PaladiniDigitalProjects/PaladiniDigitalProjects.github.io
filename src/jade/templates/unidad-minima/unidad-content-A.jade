@@ -2,10 +2,33 @@ section.section
   .container
     article.article 
       .row
-        .col-12.col-sm-6
-          strong
-            | teoria general de distemas
-          p Un sistema se define como una entidad con límites y con partes interrelacionadas e interdependientes cuya suma es mayor a la suma de sus partes.
-          
-        .col-12.col-sm-6
-          img.img-responsive(src='public/images/unidad-minima.jpg')
+        .col-12.col-sm-4
+          dl.definition-list.definition
+            dt
+              h2.subtitle
+                | Definición
+            dd
+              p 
+                | Todo sistema de diseño tiene he de tener 
+                strong
+                  | unidad mínima básica.
+                br
+                br
+                | Es en esta unidad donde se
+                strong
+                  |tiene que apoyar todo el desarroyo y escalado del sistema.
+            
+        .col-12.col-sm-8
+          .slider
+            .owl-slider.owl-carousel
+              .item
+                figure
+                  img.img-responsive(src='public/images/patente-lego-usa.jpg')
+                  figcaption
+                    | Pieza mínima de Lego en patente - 1979 Estados Unidos.
+              .item
+                figure
+                  img.img-responsive(src='public/images/patente-lego.jpg')
+                  figcaption
+                    | Patente original de Lego - 1959 Dinamarca.
+              

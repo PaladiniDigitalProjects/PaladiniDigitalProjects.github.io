@@ -4,10 +4,6 @@
 .article {
   margin: 3rem 0 6rem;
 
-  .container {
-    // border-bottom: 1px solid $light-grey;
-  }
-
   p {
     @include font-size(16);
     line-height: 1.4;
@@ -43,13 +39,36 @@
   }
 
   .destacado {
-    @include font-size(23);
-    font-family: $primary-font;
-    font-weight: bold;
-    line-height: 1.3;
     margin: 2rem;
+    font-family: $primary-italic;
     display: block;
+    p {
+      @include font-size(24);
+      line-height: 1.1;
+    }
+
+    span.firma {
+      @include font-size(16);
+      font-family: $primary-font;
+      text-align: right;
+      display: block;
+      color:$grey;
+      &:before {
+        content:'— ';
+      }
+    }
+    @include media(sm){
+      margin: 4rem 20% 2rem;
+      p {
+        @include font-size(40);
+        line-height: 1.2;
+      }
+      span.firma {
+        @include font-size(20);
+      }
+    }
   }
+
 
   .left {text-align: left;}
   .center {text-align: center;}

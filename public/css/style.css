@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* RESET */
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -86,13 +87,32 @@ table {
       .article .definition-list.definition p dt {
         margin-bottom: 2rem; }
   .article .destacado {
-    font-size: 2.3rem;
-    font-size: 23px;
-    font-family: "Akkurat-Regular", "Helvetica", sans-serif;
-    font-weight: bold;
-    line-height: 1.3;
     margin: 2rem;
+    font-family: "Akkurat-Italic", "Helvetica", sans-serif;
     display: block; }
+    .article .destacado p {
+      font-size: 2.4rem;
+      font-size: 24px;
+      line-height: 1.1; }
+    .article .destacado span.firma {
+      font-size: 1.6rem;
+      font-size: 16px;
+      font-family: "Akkurat-Regular", "Helvetica", sans-serif;
+      text-align: right;
+      display: block;
+      color: #8b8b8b; }
+      .article .destacado span.firma:before {
+        content: '— '; }
+    @media (min-width: 768px) {
+      .article .destacado {
+        margin: 4rem 20% 2rem; }
+        .article .destacado p {
+          font-size: 4rem;
+          font-size: 40px;
+          line-height: 1.2; }
+        .article .destacado span.firma {
+          font-size: 2rem;
+          font-size: 20px; } }
   .article .left {
     text-align: left; }
   .article .center {
@@ -243,7 +263,7 @@ body {
     .container {
       padding-right: 0;
       padding-left: 0;
-      margin-left: 4rem; } }
+      margin: 2rem 0 !important; } }
 
 .list {
   font-size: 1.6rem;
@@ -265,6 +285,18 @@ body {
       font-size: 1.6rem;
       font-size: 16px;
       line-height: 2; }
+  .list dd {
+    line-height: 1.4;
+    margin-bottom: 1rem; }
+
+.text-left {
+  text-align: left !important; }
+
+.text-right {
+  text-align: right !important; }
+
+.no-border {
+  border: none !important; }
 
 /* STRONG */
 strong {
@@ -299,6 +331,9 @@ figure {
     line-height: 1.5;
     padding: 0.8rem 0;
     text-align: right; }
+    figure figcaption.text-left {
+      text-align: left;
+      padding-right: 10%; }
 
 .btn {
   background: #ffffff;
