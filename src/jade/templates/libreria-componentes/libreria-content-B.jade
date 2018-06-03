@@ -1,60 +1,37 @@
 section.section
   .container
-    hr
     article.article
       .row
-        .col-12.col-sm-9
-          dl.definition-list.definition
-            dt
-              h2.subtitle Sistema web
-            dd
-              p 
-                |Un sistema de diseño es un 
-                strong
-                  | conjunto prácticas compartidas y patrones interconectados 
-                | que nos ayudan lograr el objetivo de los productos digitales.
         .col-12
           figure
-            img.img-responsive(src='public/images/design-system.png')              
+            img.img-responsive(src='public/images/components-2.jpg')
             figcaption
-              | Airbnb - Sistema de diseño / Fuente: airbnb.design
-      hr.dotted
+              | Airbnb - Componenetes y navegación.
       article.article   
         .row
           .col-12.col-sm-4
             dl.definition-list.definition
               dt
                 h2.subtitle
-                  | Practicas compartidas
+                  | Documenta y comparte.
               dd
                 p 
-                  strong
-                    | Conjunto de reglas, restricciones y principios 
-                  | sobre cómo elegimos crear, capturar, compartir y usar los patrones.
-                  br
-                  | Son imprescindibles cuando se trabaja en equipo.
+                  | Comparte y documenta, incluso define estilos CSS, para que tu equipo este sincronizado y que todos puedan aportat al sistema.
           .col-12.col-sm-8
-            figure
-              img.img-responsive(src='public/images/system-normas.png')
-              figcaption
-                | Airbnb - Normas y reglas compartidas / Fuente: airbnb.design
-
-      hr.dotted
-      article.article   
-        .row
-          .col-12.col-sm-8
-            figure
-              img.img-responsive(src='public/images/patterns.png')
-              figcaption
-                | Marvel - Patrones  / Fuente: marvelapp.com
-                
-          .col-12.col-sm-4
-            dl.definition-list.definition
-              dt
-                h2.subtitle
-                  | Patrones
-              dd
-                p Los 
-                  strong
-                    |patrones son los elementos repetitivos que combinamos para crear e interconectar elementos: 
-                  | flujos de usuarios, interacciones, botones, iconos de campos de texto, color, tipografía, microcopía.
+            .slider
+              .owl-slider.owl-carousel
+                .item
+                  figure
+                    img.img-responsive(src='public/images/componentes-5.jpg')
+                    figcaption
+                      | Bootstrap - Framework de diseño basado en la codificación de sus elementos.
+                .item
+                  figure
+                    img.img-responsive(src='public/images/componentes-4.jpg')
+                    figcaption
+                      | U.S. Web design Standars - Extenso sistema documentado para las webs del govierno de USA.
+                .item
+                  figure
+                    img.img-responsive(src='public/images/componentes-3.jpg')
+                    figcaption
+                      | IBM Carbon Design System - Definición y uso de componenetes.
