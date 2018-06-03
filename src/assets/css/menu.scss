@@ -13,12 +13,12 @@ nav.menu-sidebar {
 
 
   .page-title {
-    @include font-size(18);
+    @include font-size(24);
     margin:1rem 0 2rem;
     padding: 1rem 2rem 1rem 2rem;
     font-family: $primary-bold;
-    
-    line-height: 1.2;
+
+    line-height: 1.1;
     float: left;
     width: 100%;
     border-bottom: 1px solid $grey;

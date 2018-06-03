@@ -6,6 +6,7 @@
 	background:$white;
 	border-top:1px solid $light-grey;
 	@include font-size(14);
+	z-index: 2;
 
 	ul {
 		li {

@@ -2,7 +2,7 @@
 .page-title {
 	@include font-size(32);
 		line-height: 36px;
-  	font-family:$primary-bold;
+  	font-family:$primary-font;
 	@include media(lg){
 		@include font-size(32);
 		line-height: 50px;

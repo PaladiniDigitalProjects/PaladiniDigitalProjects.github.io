@@ -5,10 +5,12 @@
   .owl-carousel {
     position: relative;
     .owl-nav {
+      opacity: 0;
+      transition: 0.5s;
       position: absolute;
       top: 41%;
-      width: 114%;
-      margin-left: -7%;
+      width: 95%;
+      margin-left: 2.5%;
 
       button.owl-prev,
       button.owl-next {
@@ -20,7 +22,15 @@
         position: absolute;
       }
     }
+    &:hover{
+      cursor: pointer;
+      .owl-nav {
+        opacity: 1;
+      }
+    }
+
   .owl-dots { display:none;}
+
   }
 
   .slider-counter {

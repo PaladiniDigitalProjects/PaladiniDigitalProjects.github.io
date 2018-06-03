@@ -189,7 +189,8 @@ table {
   background: #ffffff;
   border-top: 1px solid #ddd;
   font-size: 1.4rem;
-  font-size: 14px; }
+  font-size: 14px;
+  z-index: 2; }
   .page-footer ul li {
     display: inline-block;
     line-height: 3;
@@ -232,6 +233,8 @@ body {
     line-height: 1px;
     height: 0.1rem;
     border: none !important; }
+    body hr.dotted {
+      background: #8b8b8b url("../images/dotted.gif"); }
 
 /* LAYOUT */
 .page-header {
@@ -254,6 +257,29 @@ body {
   @media (min-width: 1200px) {
     .section {
       margin: 3rem 2rem 2rem 3rem; } }
+  .section.section-caso_exito p {
+    font-size: 1.8rem;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #ffffff; }
+  .section.section-caso_exito .title {
+    color: #ffffff;
+    font-size: 2.4rem;
+    font-size: 24px;
+    line-height: 1.1;
+    font-family: "Akkurat-Light", "Helvetica", sans-serif;
+    margin-bottom: 2rem; }
+  .section.section-caso_exito .container {
+    background: #343434; }
+    .section.section-caso_exito .container .slider {
+      margin-top: -2.4rem; }
+      .section.section-caso_exito .container .slider .slider-counter {
+        background: #343434;
+        color: #ffffff; }
+      .section.section-caso_exito .container .slider .img-responsive {
+        border: 1px solid #343434; }
+    .section.section-caso_exito .container figcaption {
+      color: #ffffff; }
 
 .container {
   width: 100%;
@@ -346,6 +372,9 @@ figure {
 
 .no-border {
   border: none !important; }
+
+.subtitle {
+  font-weight: bold; }
 
 /* Bootstrap GRID */
 /*!
@@ -2550,12 +2579,12 @@ nav.menu-sidebar {
   font-size: 14px;
   border-right: 1px solid #8b8b8b; }
   nav.menu-sidebar .page-title {
-    font-size: 1.8rem;
-    font-size: 18px;
+    font-size: 2.4rem;
+    font-size: 24px;
     margin: 1rem 0 2rem;
     padding: 1rem 2rem 1rem 2rem;
     font-family: "Akkurat-Bold", "Helvetica", sans-serif;
-    line-height: 1.2;
+    line-height: 1.1;
     float: left;
     width: 100%;
     border-bottom: 1px solid #8b8b8b;
@@ -2654,7 +2683,7 @@ nav.menu-sidebar {
   font-size: 3.2rem;
   font-size: 32px;
   line-height: 36px;
-  font-family: "Akkurat-Bold", "Helvetica", sans-serif; }
+  font-family: "Akkurat-Regular", "Helvetica", sans-serif; }
   @media (min-width: 1200px) {
     .page-title {
       font-size: 3.2rem;
@@ -2668,16 +2697,22 @@ nav.menu-sidebar {
   .slider .owl-carousel {
     position: relative; }
     .slider .owl-carousel .owl-nav {
+      opacity: 0;
+      transition: 0.5s;
       position: absolute;
       top: 41%;
-      width: 114%;
-      margin-left: -7%; }
+      width: 95%;
+      margin-left: 2.5%; }
       .slider .owl-carousel .owl-nav button.owl-prev,
       .slider .owl-carousel .owl-nav button.owl-next {
         width: 20px; }
       .slider .owl-carousel .owl-nav button.owl-next {
         right: 0;
         position: absolute; }
+    .slider .owl-carousel:hover {
+      cursor: pointer; }
+      .slider .owl-carousel:hover .owl-nav {
+        opacity: 1; }
     .slider .owl-carousel .owl-dots {
       display: none; }
   .slider .slider-counter {
