@@ -1,0 +1,14 @@
+- var headTitle = 'Libreria de componentes'
+- var headDescription = 'Definición de Sistema de diseño'
+include ../../head.jade
+	body.page
+		.container-fluid
+			include ../../menu.jade
+			main#main
+				include libreria-header.jade
+				include libreria-content-A.jade
+				include libreria-content-B.jade
+				include libreria-content-C.jade
+				
+				footer.page-footer
+					include libreria-footer.jade

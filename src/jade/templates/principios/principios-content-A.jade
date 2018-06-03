@@ -2,30 +2,39 @@ section.section
   .container
     article.article 
       .row
-        .col-12
+        .col-12.col-sm-8
+          h2.article-title
+            | Para asegurar el éxito de un sistema es necesario 
+            strong
+              | definir unos principios y reglas básicas 
+            | que nos permitan delimitar el marco de actuación.
+          
+          ol.list.ordered-list
+            li
+              | Formula los puntos clave del sistema.
+            li
+              | Formula los principios éticos del sistema.
+            li
+              | Formula los principios de diseño del sistema.
+            li
+              | Decide si está construyendo un sistema desde cero o vas a partir des de otro sistema.
+            li
+              | Decide que herramientas y tecnologias vas a usar.
+            li 
+              | Comunica los puntos clave, las normas y principos a todo el equipo.
+          
           p
-            Before your first sprint, gather the team and discuss the most important decisions that have to be made as part of the Design Systems kick-off. After finding a solution to every problem, make sure that the entire company understands where you stand.
-            Decide whether you’re building the system from scratch or treating one of the products as the foundation of the system.
-            br
-            br
-            Some teams like to tie a kick off of a design system process with the redesign of a product. Others start with a standard that should be improved and distributed across the product portfolio. If there’s a new part of the product, tested with users, that you feel should serve as a standard - start with it and expand your approach. This is the approach that we’ve used at UXPin, when the newest part of our UI became the foundation for our design system.
-            Decide whether you’re going to build using existing technologies or introduce a new technology.
-            br
-            br
-            The design system might use a tech stack used across the entire product portfolio, in one of the products or some completely new technology. Naturally, the less popular the technology, the more difficult it’s going to be to implement the system and get teams on board. An example would be - writing a React.js based system with CSS in JS, when a company uses Angular with Less preprocessor. Opinions about what’s the right approach vary, so please discuss your situation with the team and commit to one approach. At UXPin, we’re building the system on React.js and Less, which means that the Angular part of the application will have to be eventually refactored.
-            Decide how you’re going to distribute the system.
-            br
-            br
-            Distribution of the system is crucial. Are you going to start with one team and one product? Or work across the product portfolio and take care of particular features? Make a decision and commit to one approach.
-            Decide what are the KPIs of the system
-            br
-            br
-            Discuss the measurable goals for the system. You can read more here.
-            Formulate your design principles
-            br
-            br
-            Design principles can be a useful tool to bring the entire team on the same page with shared values. What are you trying to achieve with the system? Higher consistency of interactions? Better craftsmanship? Faster implementation? More accessible UIs? Discuss and list the common principles.
-            Communicate key decisions, rules and principles to the entire company
-            br
-            br
-            Gather all the decisions, rules and principles and communicate them clearly to the rest of the company. Consider putting them all in a wiki, or listing directly in the documentation of your design system (for example in UXPin).
+            | Cuanto más restrictivo seas con las reglas más te verás empujado a buscar buenas soluciones de diseño, pero ha de ser un sitema viable. Busca un equilibrio entre normas y necesidades.
+          
+              
+        .col-12.col-sm-4
+          figure
+            img.img-responsive(src='public/images/parchis.png', alt='Tablero de Parchís')
+            figcaption.text-left
+              strong
+                | Tablero de Parchís.
+              br
+              | Los juegos de mesa funcionan gracias a un compendio de normas que explican y definen el sistema de juego.
+              br
+              | Es imprescindible que las normas sean aceptadas y validadas por todos los participantes antes de jugar.
+              
