@@ -29,11 +29,10 @@
 	}
 
 	@include media(lg){
-		left: 18%;
+		left: 250px;
 	}
 
 	&.footer-home {
-		// position: relative;
 		background: $black;
 		a {
 			color:$white;
