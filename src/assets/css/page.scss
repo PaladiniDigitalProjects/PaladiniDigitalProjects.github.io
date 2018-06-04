@@ -1,9 +1,13 @@
 /* TYPOGRAPHY */
 .page-title {
-	@include font-size(32);
-		line-height: 36px;
+	@include font-size(24);
+		line-height: 1.16;
   	font-family:$primary-font;
-	@include media(lg){
+		padding-right: 5rem;
+		margin-top: -1.5rem;
+
+	@include media(sm){
+		margin-top: 0;
 		@include font-size(32);
 		line-height: 50px;
 	}

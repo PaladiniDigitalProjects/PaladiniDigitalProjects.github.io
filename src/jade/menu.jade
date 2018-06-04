@@ -1,15 +1,20 @@
-
+button#menu
+  span.bar1
+  span.bar2
+  span.bar3
 nav.menu-sidebar.hide-sidebar
   .page-title
     a(href='index.html')
       | Diseño de sistemas responsive
-  button#menu
   hr
   ul
-    li
-      a(href='definicion.html')
-        | ¿Que es un Sistema?
+    li 
+      a(href='sistemas.html')
+        | Sistemas
       ul
+        li
+          a(href='definicion.html')
+            | ¿Que es un Sistema?  
         li
           a(href='unidad-minima.html')
             | Unidad mínima
@@ -21,64 +26,52 @@ nav.menu-sidebar.hide-sidebar
             | Libreria de componentes
       
     li
-      a(href="modulacion.html") Modulación
+      a(href="codificacion.html") Codificación
       ul
         li
-          a(href='header.html')
-            | Header
+          a(href='modulacion.html')
+            | Modulación del proyecto
         li
-          a(href='body.html')
-            | Body
+          a(href='frameworks.html')
+            | Frameworks
         li
-          a(href='sidebar.html')
-            | Sidebar
+          a(href='Layout.html')
+            | Layout
         li
-          a(href='noticia.html')
-            | Noticia
-        li
-          a(href='listado.html')
-            | Listado
-    li
-      a(href="grid.html") Grid
-        span músculos
-      ul
-        li
-          a(href='columnas.html')
-            | Columnas
-        li
-          a(href='orden.html')
-            | Orden de lectura
-    li
-      a(href="tipografia.html") Tipografía
-        span alma
-      ul
+          a(href="grid.html")
+            | Grid
         li
           a(href='grilla.html')
             | Grilla tipográfica
-        li
-          a(href='gerarquia.html')
-            |  Gerarquia
-    
+  
     li
-      a(href="colores.html") Colores
-        span piel
+      a(href="#") Diseño gráfico
       ul
         li
-          a(href='teoria-color.html')
-            | Relación de los 3 tercios
+          a(href="tipografia.html") 
+            | Tipografía
         li
-          a(href='color-interaccion.html')
-            | El color en las interacciones
-    li
-      a(href="unidad-minima.html") Modulacion
-        span ADN
-      ul
-        li
-          a(href='patrones.html')
-            | Patrones
-        li
-          a(href='usos.html')
-            | Casos de uso
+          a(href="colores.html")
+            | Colores
+          li
+            a(href='teoria-color.html')
+              | Relación de los 3 tercios
+          li
+            a(href='color-interaccion.html')
+              | El color en las interacciones
+      li
+        a(href="interacciones.html")
+          | comportamientos
+    //- li
+    //-   a(href="unidad-minima.html") Modulacion
+    //-     span ADN
+    //-   ul
+    //-     li
+    //-       a(href='patrones.html')
+    //-         | Patrones
+    //-     li
+    //-       a(href='usos.html')
+    //-         | Casos de uso
             
   hr  
   ul.footer

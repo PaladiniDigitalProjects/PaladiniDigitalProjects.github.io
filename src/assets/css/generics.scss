@@ -32,11 +32,12 @@ body {
 /* LAYOUT */
 
 .page-header {
-  margin:0 0 6rem 0;
-  padding:0.5rem 1.3rem 0.8rem 2rem;
+  margin:1.4rem 0 6rem 0;
+  padding:2.5rem 1.3rem 0.8rem 2rem;
   border-bottom: 1px solid $grey;
-	@include media(lg){
-    margin:2rem 0 6rem 0;
+
+	@include media(sm){
+    margin:0 0 6rem 0;
     padding-left: 4rem;
   }
 }

@@ -1,6 +1,6 @@
 /* ARTICLE */
 .apertura-seccion {
-  background: $black;
+  background:#000000;
   height: 100vh;
   color:$white;
   margin: 0 !important;
@@ -55,7 +55,7 @@
 .page-footer{
   &.footer-seccion {
     border-top:1px solid grey;
-    background: $black;
+    background: #000000;
     a {
       color:$white;
     }
