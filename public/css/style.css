@@ -2567,7 +2567,8 @@ html {
       .apertura-seccion #main .article ul.list li {
         font-size: 1.8rem;
         font-size: 18px;
-        line-height: 2;
+        line-height: 1.25;
+        margin-bottom: 1.5rem;
         display: block;
         font-family: "Akkurat-Light", "Helvetica", sans-serif; }
   .apertura-seccion p {

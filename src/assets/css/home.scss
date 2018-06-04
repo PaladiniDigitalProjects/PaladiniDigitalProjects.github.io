@@ -19,7 +19,8 @@
       margin-bottom:3rem;
       li {
         @include font-size(18);
-        line-height: 2;
+        line-height: 1.25;
+        margin-bottom: 1.5rem;
         display: block;
         font-family: $primary-light;
         }
