@@ -358,6 +358,10 @@ body {
 strong {
   font-family: "Akkurat-Bold", "Helvetica", sans-serif; }
 
+/* ITALIC */
+em {
+  font-family: "Akkurat-Italic", "Helvetica", sans-serif; }
+
 /* IMG */
 img {
   opacity: 1;
