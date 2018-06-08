@@ -2732,7 +2732,8 @@ nav.menu-sidebar {
           font-weight: normal; }
     nav.menu-sidebar ul.footer li {
       font-weight: normal;
-      line-height: 2; }
+      line-height: 1.5;
+      margin-bottom: 0.75rem; }
 
 .apertura-seccion #menu .bar1, .apertura-seccion #menu .bar2, .apertura-seccion #menu .bar3 {
   display: block;
