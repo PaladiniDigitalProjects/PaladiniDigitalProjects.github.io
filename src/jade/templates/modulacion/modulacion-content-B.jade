@@ -3,29 +3,65 @@ section.section
     hr.dotted
     br
     article.article 
-      .row  
-        .col-12.col-sm-8
-          figure
-            img.img-responsive(src='public/images/boston-globe.png')
-            figcaption.text-left
-              | Website responsive del periódico Boston Globe --> www.bostonglobe.com
-        .col-12.col-sm-4
-          br
-          h1.article-title 
-            strong
-              | Modulación responsive
-            br
-            br    
-      
-    hr.dotted
-    br
-    br
-    article.article
       .row
-        .col-12
+        .col-12.col-sm-8
+          h2.subtitle
+            | Módulo básico
+          br
+          p
+            | Para una correcta modulación es fundamental detectar cual es el contenido básico (el que se repite en todos las casos). De este modo se reduce la cantidad de código y simplifica la evolución de las variaciones.
+          br
+          br  
+      .row
+        .col-6.col-sm-3
+          .card
+            h2.card-title
+              | Módulo básico
+            figure
+              img.img-responsive(src='public/images/elpe-entretodos-01.jpg')
+              figcaption.text-left
+                | Modulo de opinión portada de El Periódico de Catalunya  
+        .col-6.col-sm-3
+          .card
+            h2.card-title
+              | Módulo básico - caso 1
+            figure
+              img.img-responsive(src='public/images/elpe-entretodos-02.jpg')
+              figcaption.text-left
+                | Modulo de opinión portada de El Periódico de Catalunya    
+        .col-6.col-sm-3
+          .card
+            h2.card-title
+              | Módulo básico - caso 2
+            figure
+              img.img-responsive(src='public/images/elpe-entretodos-04.jpg')
+              figcaption.text-left
+                  | Modulo de opinión portada de El Periódico de Catalunya
+            
+        .col-6.col-sm-3
+          .card
+            h2.card-title
+              | Módulo básico - caso 3 
+            figure
+              img.img-responsive(src='public/images/elpe-entretodos-03.jpg')
+              figcaption.text-left
+                | Modulo de opinión portada de El Periódico de Catalunya
+        
+    article.article
+      hr.dotted
+      br
+      .row
+        .col-12.col-sm-3
+          br
+          h2.subtitle
+            | Casos de uso
+          br
+          p
+            | La modulación tambien es importante para trabajar los diferentes casos de uso de un mismo módulo.
+        .col-12.col-sm-9
           figure
-            img.img-svg.img-border(src='public/images/mobiler-first.svg')
+            img.img-responsive.no-border(src='public/images/encuesta.png')
             figcaption.text-left
-              "Graceful degradation vs. progressive enhancement" 
-        .col-12
-          blockquotes
+              | Módulo de encuesta de El Periodico de Catalunya
+        
+            

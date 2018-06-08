@@ -129,27 +129,105 @@
             <div class="container">
               <hr class="dotted"><br>
               <article class="article"> 
-                <div class="row"> 
+                <div class="row">
                   <div class="col-12 col-sm-8">
-                    <figure><img src="public/images/boston-globe.png" class="img-responsive">
-                      <figcaption class="text-left">Website responsive del periódico Boston Globe --> www.bostonglobe.com</figcaption>
-                    </figure>
+                    <h2 class="subtitle">Módulo básico</h2><br>
+                    <p>Para una correcta modulación es fundamental detectar cual es el contenido básico (el que se repite en todos las casos). De este modo se reduce la cantidad de código y simplifica la evolución de las variaciones.</p><br><br>
                   </div>
-                  <div class="col-12 col-sm-4"><br>
-                    <h1 class="article-title"> <strong>Modulación responsive</strong><br><br></h1>
+                </div>
+                <div class="row">
+                  <div class="col-6 col-sm-3">
+                    <div class="card">
+                      <h2 class="card-title">Módulo básico</h2>
+                      <figure><img src="public/images/elpe-entretodos-01.jpg" class="img-responsive">
+                        <figcaption class="text-left">Modulo de opinión portada de El Periódico de Catalunya  </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-3">
+                    <div class="card">
+                      <h2 class="card-title">Módulo básico - caso 1</h2>
+                      <figure><img src="public/images/elpe-entretodos-02.jpg" class="img-responsive">
+                        <figcaption class="text-left">Modulo de opinión portada de El Periódico de Catalunya    </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-3">
+                    <div class="card">
+                      <h2 class="card-title">Módulo básico - caso 2</h2>
+                      <figure><img src="public/images/elpe-entretodos-04.jpg" class="img-responsive">
+                        <figcaption class="text-left">Modulo de opinión portada de El Periódico de Catalunya</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-3">
+                    <div class="card">
+                      <h2 class="card-title">Módulo básico - caso 3 </h2>
+                      <figure><img src="public/images/elpe-entretodos-03.jpg" class="img-responsive">
+                        <figcaption class="text-left">Modulo de opinión portada de El Periódico de Catalunya</figcaption>
+                      </figure>
+                    </div>
                   </div>
                 </div>
               </article>
-              <hr class="dotted"><br><br>
               <article class="article">
+                <hr class="dotted"><br>
                 <div class="row">
-                  <div class="col-12">
-                    <figure><img src="public/images/mobiler-first.svg" class="img-svg img-border">
-                      <figcaption class="text-left">"Graceful degradation vs. progressive enhancement" </figcaption>
+                  <div class="col-12 col-sm-3"><br>
+                    <h2 class="subtitle">Casos de uso</h2><br>
+                    <p>La modulación tambien es importante para trabajar los diferentes casos de uso de un mismo módulo.</p>
+                  </div>
+                  <div class="col-12 col-sm-9">
+                    <figure><img src="public/images/encuesta.png" class="img-responsive no-border">
+                      <figcaption class="text-left">Módulo de encuesta de El Periodico de Catalunya</figcaption>
                     </figure>
                   </div>
-                  <div class="col-12">
-                    <blockquotes></blockquotes>
+                </div>
+              </article>
+            </div>
+          </section>
+          <section class="section">
+            <div class="container">
+              <hr class="dotted"><br>
+              <article class="article"> 
+                <div class="row">
+                  <div class="col-12 col-sm-8">
+                    <h2 class="subtitle">Modulación de la codificación</h2><br>
+                    <p>La modulación no solo se tiene que limitar a aspectos formales, es importante que la modulación se refleje en la estructura de plantillas y de estilos del <em>theme. </em>Los precompiladores de código resultan de gran ayuda en este proceso.</p><br><br>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6 col-sm-3">
+                    <div class="card">
+                      <h2 class="card-title">Estructura de plantillas JADE</h2>
+                      <figure><img src="public/images/html.png" class="img-responsive">
+                        <figcaption class="text-left">Estructura de carpetas JADE de este site. JADE es un lenguaje simplificado que permite funciones, modularización de archivos y se compila en HTML.</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-3">
+                    <div class="card">
+                      <h2 class="card-title">Estructura estilos SASS</h2>
+                      <figure><img src="public/images/css.png" class="img-responsive">
+                        <figcaption class="text-left">Estructura de carpetas SCSS (SASS) de este site. SASS es un lenguaje simplificado que permite funciones, modularización de archivos y se compila en CSS.    </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-3">
+                    <div class="card">
+                      <h2 class="card-title">Segmentación estilos</h2>
+                      <figure><img src="public/images/style-scss.png" class="img-responsive">
+                        <figcaption class="text-left">Archivo final de estilos del site donde se realizan <em>includes </em>de todos los subarchivos SASS del site. Una vez compilado el archivo style.scss tendremos style.css donde estan todos los estilos que definen el site.</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-3">
+                    <div class="card">
+                      <h2 class="card-title">Hoja principal CSS</h2>
+                      <figure><img src="public/images/style-css.png" class="img-responsive">
+                        <figcaption class="text-left">Archivo CSS resultante</figcaption>
+                      </figure>
+                    </div>
                   </div>
                 </div>
               </article>
@@ -157,8 +235,8 @@
           </section>
           <footer class="page-footer">
             <ul class="footer-nav">
-              <li class="prev"><a href="codificacion.html"><-- codificación</a></li>
-              <li class="next"><a href="frameworks.html">Frameworks --> </a></li>
+              <li class="prev"><a href="frameworks.html"><-- codificación</a></li>
+              <li class="next"><a href="mobilefirst.html">Moduladicón aditiva --> </a></li>
             </ul>
           </footer>
         </main>

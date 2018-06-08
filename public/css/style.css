@@ -431,7 +431,9 @@ iframe.iframe {
   border: none !important; }
 
 .subtitle {
-  font-weight: bold; }
+  font-family: "Akkurat-Bold", "Helvetica", sans-serif;
+  font-size: 1.9rem;
+  font-size: 19px; }
 
 /* Bootstrap GRID */
 /*!

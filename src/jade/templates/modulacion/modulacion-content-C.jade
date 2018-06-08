@@ -1,0 +1,55 @@
+section.section
+  .container
+    hr.dotted
+    br
+    article.article 
+      .row
+        .col-12.col-sm-8
+          h2.subtitle
+            | Modulación de la codificación
+          br
+          p
+            | La modulación no solo se tiene que limitar a aspectos formales, es importante que la modulación se refleje en la estructura de plantillas y de estilos del 
+            em
+              | theme. 
+            | Los precompiladores de código resultan de gran ayuda en este proceso.
+          br
+          br  
+      .row
+        .col-6.col-sm-3
+          .card
+            h2.card-title
+              | Estructura de plantillas JADE
+            figure
+              img.img-responsive(src='public/images/html.png')
+              figcaption.text-left
+                | Estructura de carpetas JADE de este site. JADE es un lenguaje simplificado que permite funciones, modularización de archivos y se compila en HTML.
+                  
+        .col-6.col-sm-3
+          .card
+            h2.card-title
+              | Estructura estilos SASS
+            figure
+              img.img-responsive(src='public/images/css.png')
+              figcaption.text-left
+                | Estructura de carpetas SCSS (SASS) de este site. SASS es un lenguaje simplificado que permite funciones, modularización de archivos y se compila en CSS.    
+        .col-6.col-sm-3
+          .card
+            h2.card-title
+              | Segmentación estilos
+            figure
+              img.img-responsive(src='public/images/style-scss.png')
+              figcaption.text-left
+                | Archivo final de estilos del site donde se realizan 
+                em
+                  |includes 
+                | de todos los subarchivos SASS del site. Una vez compilado el archivo style.scss tendremos style.css donde estan todos los estilos que definen el site.
+        .col-6.col-sm-3
+          .card
+            h2.card-title
+              | Hoja principal CSS
+            figure
+              img.img-responsive(src='public/images/style-css.png')
+              figcaption.text-left
+                | Archivo CSS resultante
+              

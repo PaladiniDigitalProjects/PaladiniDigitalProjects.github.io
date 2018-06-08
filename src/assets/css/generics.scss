@@ -265,5 +265,6 @@ iframe.iframe {
 }
 
 .subtitle {
-  font-weight: bold;
+  font-family:$primary-bold;
+  @include font-size(19);
 }
