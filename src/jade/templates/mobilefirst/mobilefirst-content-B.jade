@@ -1,13 +1,84 @@
-.container
-  hr.dotted
-  br
-  br
-  article.article
-    .row
-      .col-12
-        figure
-          img.img-svg.img-border(src='public/images/mobiler-first.svg')
-          figcaption.text-left
-            "Graceful degradation vs. progressive enhancement" 
-      .col-12
-        blockquotes
+section.section
+  .container
+    article.article
+      .row
+        .col-12
+          figure 
+            img.img-svg(src='public/images/mobiler-first.svg') 
+            figcaption.text-left
+              | Esquema de como evoluciona el contenido des del formato móvil al formato de escritorio.
+              br
+              | Para codificar este proceso es imprescindible trabajar con CSS "media queries", que
+              br
+              | limitan las hojas de estilo en función del ancho de la pantalla.
+
+section.section.section-caso_exito
+  .container
+    article.article
+      .row
+        .col-12.col-sm-3
+          br
+          h1.title
+            | Atomic design
+          p
+            | Sistema basado en módulos definidos a modo de una estructuras orgánicas.
+          br
+          dl.list
+            dt
+              |Átomos 
+            dd
+              |Componentes básicos de materia. Etiquetas HTML, labels, botones, colores...
+            dt
+              |Moléculas 
+            dd
+              |Grupos de átomos unidos entre sí. Son las unidades compuestas más pequeñas.
+            dt
+              |Organismos 
+            dd
+              |Grupos de moléculas que interactúan entre si definiendo una parte de la interficie.
+            dt
+              |Plantillas 
+            dd
+              |Grupos de organismos unidos que forman plantillas dinámicas.
+            dt
+              |Páginas 
+            dd
+              |Compuestas de plantillas, muestran las disposición final contenido dinámico.
+              
+        .col-12.col-sm-9
+          br
+          br
+          .slider
+            .owl-slider.owl-carousel
+              .item
+                figure
+                  img.img-responsive(src='public/images/atomic-1.png')
+                  figcaption
+                    strong
+                      a(href='http://atomicdesign.bradfrost.com/', target='_blank') Atómic design
+                    |, sistema basado en "mobile first" creado Brad Frost.
+              .item
+                figure
+                  img.img-responsive(src='public/images/atomic-2.png')
+                  figcaption
+                    | Elementos html que funcionan como átomos en el sistema.
+              .item
+                figure
+                  img.img-responsive(src='public/images/atomic-3.png')
+                  figcaption
+                    | Formulario de búsqueda, ejemplo de molécula.
+              .item
+                figure
+                  img.img-responsive(src='public/images/atomic-4.png')
+                  figcaption
+                    | Cabecera como ejemplo de organismo.
+              .item
+                figure
+                  img.img-responsive(src='public/images/atomic-5.png')
+                  figcaption
+                    | Plantilla 
+              .item
+                figure
+                  img.img-responsive(src='public/images/atomic-6.png')
+                  figcaption
+                    | Páginas

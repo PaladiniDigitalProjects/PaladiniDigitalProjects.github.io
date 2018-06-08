@@ -57,17 +57,26 @@ body {
 
   &.section-caso_exito {
     p {
-      @include font-size(18);
-      line-height: 1.4;
+      @include font-size(16);
+      line-height: 1.2;
       color:$white;
+      font-family: $primary-light;
     }
 
     .title {
       color:$white;
-      @include font-size(24);
+      @include font-size(22);
       line-height: 1.1;
       font-family: $primary-light;
       margin-bottom: 2rem;
+    }
+
+    a {
+      color:$white;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
     }
 
     .container {
@@ -78,6 +87,7 @@ body {
       .slider-counter {
         background: $black;
         color:$white;
+        font-family: $primary-light;
       }
       .img-responsive {
         border:1px solid $black;
@@ -89,8 +99,29 @@ body {
     }
 
   }
-
+  .list {
+    color:$white;
+    @include font-size(16);
+    line-height: 1.2;
+    letter-spacing: 0.025rem;
+    dt {
+      text-transform: uppercase;
+      font-family: $primary-light;
+    }
+    dd {
+      margin-bottom: 2rem;
+      font-family: $primary-light;
+    }
+    }
   }
+}
+
+p.inicio {
+  @include font-size(32);
+  line-height: 1.4;
+  letter-spacing: 0.025rem;
+  margin-bottom: 4rem;
+  font-family: $primary-light;
 }
 
 .container {

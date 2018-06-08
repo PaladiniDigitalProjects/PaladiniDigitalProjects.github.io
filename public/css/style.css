@@ -94,6 +94,11 @@ table {
       font-size: 2.4rem;
       font-size: 24px;
       line-height: 1.1; }
+      .article .destacado p.king-size {
+        font-size: 4rem;
+        font-size: 40px;
+        line-height: 1;
+        font-family: "Akkurat-Bold", "Helvetica", sans-serif; }
     .article .destacado span.firma {
       font-size: 1.6rem;
       font-size: 16px;
@@ -105,11 +110,16 @@ table {
         content: '— '; }
     @media (min-width: 768px) {
       .article .destacado {
-        margin: 4rem 20% 2rem; }
+        margin: 4rem 15% 2rem; }
         .article .destacado p {
           font-size: 4rem;
           font-size: 40px;
           line-height: 1.2; }
+          .article .destacado p.king-size {
+            font-size: 9rem;
+            font-size: 90px;
+            letter-spacing: 0.1rem;
+            margin-bottom: 6rem; }
         .article .destacado span.firma {
           font-size: 2rem;
           font-size: 20px; } }
@@ -259,28 +269,55 @@ body {
     .section {
       margin: 3rem 2rem 2rem 3rem; } }
   .section.section-caso_exito p {
-    font-size: 1.8rem;
-    font-size: 18px;
-    line-height: 1.4;
-    color: #ffffff; }
+    font-size: 1.6rem;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #ffffff;
+    font-family: "Akkurat-Light", "Helvetica", sans-serif; }
   .section.section-caso_exito .title {
     color: #ffffff;
-    font-size: 2.4rem;
-    font-size: 24px;
+    font-size: 2.2rem;
+    font-size: 22px;
     line-height: 1.1;
     font-family: "Akkurat-Light", "Helvetica", sans-serif;
     margin-bottom: 2rem; }
+  .section.section-caso_exito a {
+    color: #ffffff;
+    text-decoration: underline; }
+    .section.section-caso_exito a:hover {
+      text-decoration: none; }
   .section.section-caso_exito .container {
     background: #343434; }
     .section.section-caso_exito .container .slider {
       margin-top: -2.4rem; }
       .section.section-caso_exito .container .slider .slider-counter {
         background: #343434;
-        color: #ffffff; }
+        color: #ffffff;
+        font-family: "Akkurat-Light", "Helvetica", sans-serif; }
       .section.section-caso_exito .container .slider .img-responsive {
         border: 1px solid #343434; }
     .section.section-caso_exito .container figcaption {
       color: #ffffff; }
+  .section.section-caso_exito .list {
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.025rem; }
+    .section.section-caso_exito .list dt {
+      text-transform: uppercase;
+      font-family: "Akkurat-Light", "Helvetica", sans-serif; }
+    .section.section-caso_exito .list dd {
+      margin-bottom: 2rem;
+      font-family: "Akkurat-Light", "Helvetica", sans-serif; }
+
+p.inicio {
+  font-size: 3.2rem;
+  font-size: 32px;
+  line-height: 1.4;
+  letter-spacing: 0.025rem;
+  margin-bottom: 4rem;
+  font-family: "Akkurat-Light", "Helvetica", sans-serif; }
 
 .container {
   width: 100%;
@@ -2697,15 +2734,13 @@ nav.menu-sidebar {
       font-weight: normal;
       line-height: 2; }
 
-.apertura-seccion #menu {
-  background: #000; }
-  .apertura-seccion #menu .bar1, .apertura-seccion #menu .bar2, .apertura-seccion #menu .bar3 {
-    display: block;
-    width: 30px;
-    height: 3px;
-    background-color: #ffffff;
-    margin: 6px 0;
-    transition: 0.4s; }
+.apertura-seccion #menu .bar1, .apertura-seccion #menu .bar2, .apertura-seccion #menu .bar3 {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.4s; }
 
 #main {
   position: absolute;
@@ -2733,7 +2768,7 @@ nav.menu-sidebar {
   z-index: 999;
   height: 30px;
   width: 35px;
-  background: #ffffff;
+  background: transparent !important;
   border: none;
   cursor: pointer; }
   #menu:focus {

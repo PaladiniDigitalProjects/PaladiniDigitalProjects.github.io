@@ -45,6 +45,11 @@
     p {
       @include font-size(24);
       line-height: 1.1;
+      &.king-size {
+        @include font-size(40);
+        line-height: 1;
+        font-family: $primary-bold;
+      }
     }
 
     span.firma {
@@ -58,10 +63,15 @@
       }
     }
     @include media(sm){
-      margin: 4rem 20% 2rem;
+      margin: 4rem 15% 2rem;
       p {
         @include font-size(40);
         line-height: 1.2;
+        &.king-size {
+          @include font-size(90);
+          letter-spacing: 0.1rem;
+          margin-bottom: 6rem;
+        }
       }
       span.firma {
         @include font-size(20);

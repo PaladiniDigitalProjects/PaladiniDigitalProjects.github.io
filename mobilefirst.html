@@ -15,7 +15,7 @@
       <div class="container-fluid">
         <button id="menu"><span class="bar1"></span><span class="bar2"></span><span class="bar3"></span></button>
         <nav class="menu-sidebar hide-sidebar">
-          <div class="page-title"><a href="index.html">Diseño de sistemas responsive</a></div>
+          <div class="page-title"><a href="index.html">Diseño de<br>sistemas web</a></div>
           <hr>
           <ul>
             <li> <a href="sistemas.html">Sistemas</a>
@@ -31,23 +31,22 @@
                 <li><a href="codigo.html">¿Que es codificar?</a></li>
                 <li><a href="frameworks.html">Frameworks</a></li>
                 <li><a href="modulacion.html">Modulación</a></li>
-                <li><a href="mobilefirst.html">Modulacion aditiva</a></li>
-                <li><a href="Layout.html">Layout</a></li>
+                <li><a href="mobilefirst.html">Mobile first</a></li>
               </ul>
             </li>
-            <li><a href="#">Diseño gráfico</a>
+            <li><a href="diseno-grafico.html">Diseño gráfico</a>
               <ul>
-                <li><a href="grid.html">Grid</a></li>
                 <li><a href="tipografia.html">
                      
                     Tipografía</a></li>
-                <li><a href="colores.html">Colores / Relación de los 3 tercios / Color interacciones</a></li>
+                <li><a href="grid.html">Grid</a></li>
+                <li><a href="colores.html">Color</a></li>
               </ul>
             </li>
           </ul>
           <hr>
           <ul class="footer">
-            <li><a href="caso-estudio.html">Caso de estudio: El Periodico de Catalunya</a></li>
+            <li><a href="caso-estudio.html"><strong>Caso de estudio:</strong><br>El Periodico de Catalunya</a></li>
             <li><a href="modulos.html">Sistema utilizado</a></li>
             <li><a href="referencias.html">Referencias</a></li>
             <li><a href="glosario.html">Glosario</a></li>
@@ -56,44 +55,108 @@
         </nav>
         <main id="main">
           <header class="page-header">
-            <h1 class="page-title">Modulación responsive</h1>
+            <h1 class="page-title">Mobile first</h1>
           </header>
           <section class="section">
             <div class="container">
-              <hr class="dotted"><br>
               <article class="article"> 
                 <div class="row"> 
                   <div class="col-12 col-sm-8">
                     <figure><img src="public/images/boston-globe.png" class="img-responsive">
-                      <figcaption class="text-left">Website responsive del periódico Boston Globe --> www.bostonglobe.com</figcaption>
+                      <figcaption class="text-left">Website responsive del diario Boston Globe --> www.bostonglobe.com</figcaption>
                     </figure>
                   </div>
                   <div class="col-12 col-sm-4"><br>
-                    <h1 class="article-title"> <strong>Modulación responsive</strong><br></h1>
+                    <h1 class="article-title"> <strong>"Graceful degradation vs progressive enhancement"</strong><br><br></h1>
+                    <p>La modulación "mobile first" se basa en diseñar y codificar primero para la versión móvil, obligando a prescindir de lo superfluo y sintentizar al máximo. Este proceso acostumbra a redundar positivamente en el producto final, y hay que tener en cuenta el uso que se le a la web en función del dispositivo.
+                      <ul class="list dot-list">
+                        <li><strong>Móvil </strong>--> Uso esporádico a modo de checkign. Acciones simples.</li>
+                        <li><strong>Tablet </strong>--> Lectura más reposada. Acciones de complejidad media.</li>
+                        <li><strong>Sobremesa </strong>--> Trabajo. Acciones complejas.</li>
+                      </ul>
+                    </p>
                   </div>
                 </div>
               </article>
             </div>
           </section>
-          <div class="container">
-            <hr class="dotted"><br><br>
-            <article class="article">
-              <div class="row">
-                <div class="col-12">
-                  <figure><img src="public/images/mobiler-first.svg" class="img-svg img-border">
-                    <figcaption class="text-left">"Graceful degradation vs. progressive enhancement" </figcaption>
-                  </figure>
+          <section class="section">
+            <div class="container">
+              <article class="article">
+                <div class="row">
+                  <div class="col-12">
+                    <figure> <img src="public/images/mobiler-first.svg" class="img-svg">
+                      <figcaption class="text-left">Esquema de como evoluciona el contenido des del formato móvil al formato de escritorio.<br>Para codificar este proceso es imprescindible trabajar con CSS "media queries", que<br>limitan las hojas de estilo en función del ancho de la pantalla.</figcaption>
+                    </figure>
+                  </div>
                 </div>
-                <div class="col-12">
-                  <blockquotes></blockquotes>
+              </article>
+            </div>
+          </section>
+          <section class="section section-caso_exito">
+            <div class="container">
+              <article class="article">
+                <div class="row">
+                  <div class="col-12 col-sm-3"><br>
+                    <h1 class="title">Atomic design</h1>
+                    <p>Sistema basado en módulos definidos a modo de una estructuras orgánicas.</p><br>
+                    <dl class="list">
+                      <dt>Átomos </dt>
+                      <dd>Componentes básicos de materia. Etiquetas HTML, labels, botones, colores...</dd>
+                      <dt>Moléculas </dt>
+                      <dd>Grupos de átomos unidos entre sí. Son las unidades compuestas más pequeñas.</dd>
+                      <dt>Organismos </dt>
+                      <dd>Grupos de moléculas que interactúan entre si definiendo una parte de la interficie.</dd>
+                      <dt>Plantillas </dt>
+                      <dd>Grupos de organismos unidos que forman plantillas dinámicas.</dd>
+                      <dt>Páginas </dt>
+                      <dd>Compuestas de plantillas, muestran las disposición final contenido dinámico.</dd>
+                    </dl>
+                  </div>
+                  <div class="col-12 col-sm-9"><br><br>
+                    <div class="slider">
+                      <div class="owl-slider owl-carousel">
+                        <div class="item">
+                          <figure><img src="public/images/atomic-1.png" class="img-responsive">
+                            <figcaption><strong><a href="http://atomicdesign.bradfrost.com/" target="_blank">Atómic design</a></strong>, sistema basado en "mobile first" creado Brad Frost.</figcaption>
+                          </figure>
+                        </div>
+                        <div class="item">
+                          <figure><img src="public/images/atomic-2.png" class="img-responsive">
+                            <figcaption>Elementos html que funcionan como átomos en el sistema.</figcaption>
+                          </figure>
+                        </div>
+                        <div class="item">
+                          <figure><img src="public/images/atomic-3.png" class="img-responsive">
+                            <figcaption>Formulario de búsqueda, ejemplo de molécula.</figcaption>
+                          </figure>
+                        </div>
+                        <div class="item">
+                          <figure><img src="public/images/atomic-4.png" class="img-responsive">
+                            <figcaption>Cabecera como ejemplo de organismo.</figcaption>
+                          </figure>
+                        </div>
+                        <div class="item">
+                          <figure><img src="public/images/atomic-5.png" class="img-responsive">
+                            <figcaption>Plantilla </figcaption>
+                          </figure>
+                        </div>
+                        <div class="item">
+                          <figure><img src="public/images/atomic-6.png" class="img-responsive">
+                            <figcaption>Páginas</figcaption>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </article>
-          </div>
+              </article>
+            </div>
+          </section>
           <footer class="page-footer">
             <ul class="footer-nav">
               <li class="prev"><a href="modulacion.html"><-- Modulación</a></li>
-              <li class="next"><a href="Layout.html">Layout --> </a></li>
+              <li class="next"><a href="diseno-grafico.html">Diseño gráfico --> </a></li>
             </ul>
           </footer>
         </main>
