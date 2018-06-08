@@ -1,65 +1,38 @@
 section.section
   .container
+    hr.dotted
     article.article 
       .row
         .col-12.col-sm-4
-          h1.page-title.text-right
+          br
+          h1.article-title
             strong
-              | HTML
-        
-        .col-12.col-sm-4
+              | Preprocesadores de código
           br
           p
-            strong
-              | Hypertext Markup Language
+            | Se trata de un software que validad el codigo creado y lo procesa para que el resultante sea compatibles con todos los navegadores y/o reproductores.
             br
+            | En el caso de los CSS se acostumbra a trabajar con 
+            a(href='http://lesscss.org/', target='_blank')
+              | LESS 
+            | o 
+            a(href='https://sass-lang.com/guide', target='_blank')
+              | SCSS
             br
-            | Lenguage basado en etiquetas que se abren y cierran, donde el continente delimita y asigna valor al contenido.
-            
-        .col-12.col-sm-4
-          p
-            br
-            |#{"<html></html>"}
-            br 
-            |#{"<header></header>"}
-            br 
-            |#{"<body></body>"}
-            br 
-            |#{"<header></header>"}
-            br 
-            |#{"<h1></h1>"}
-            br
-            |#{"<p></p>"}
-      
-      .row
-        .col-12.col-sm-4
-          h1.page-title.text-right
-            strong
-              | CSS
-        .col-12.col-sm-4
-          br
-          p 
-            strong
-              | Cascading Style Sheet
-            br
-            br
-            | Lenguage basado atributos que se asocian a una etiqueta HTML mediante una clase o identificador.
-            br
-            br
-            | La posición de la clase en la hoja de estilos delimita su gerarquia en base al resto de definciones.
+            ul.list.dot-list
+              li Permite la herencia de estilos.
+              li Ayuda a modularizar mejor las hojas de estilos.
+              li Permite el uso de variables.
+              li Permite realizar operaciones numéricas.
+              li Permite el uso de funciones y bucles.
+              li Permite detectar los herrores de codigo con anterioridad.
+              li Reduce la cantidad de código.
+              
         
         .col-12.col-sm-4
-          p
-            br
-            |.titular {
-            br
-            |  font-family: Helvetica;
-            br
-            |  color: red;
-            br
-            |  font-size: 34px;
-            br
-            |#{'}'}
-          
-        
-        
+          iframe.iframe(width='100%', height='520', src='https://jsfiddle.net/PaladiniDigitalProjects/9ncrLey6/1/embedded/css/', allowfullscreen='allowfullscreen', allowpaymentrequest='', frameborder='0')
+        .col-12.col-sm-4
+          iframe.iframe(width='100%', height='520', src='https://jsfiddle.net/PaladiniDigitalProjects/uay4dge0/embedded/css/', allowfullscreen='allowfullscreen', allowpaymentrequest='', frameborder='0')
+
+
+              

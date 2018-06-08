@@ -31,21 +31,18 @@
                 <li><a href="codigo.html">¿Que es codificar?</a></li>
                 <li><a href="frameworks.html">Frameworks</a></li>
                 <li><a href="modulacion.html">Modulación</a></li>
+                <li><a href="mobilefirst.html">Modulacion aditiva</a></li>
                 <li><a href="Layout.html">Layout</a></li>
-                <li><a href="grid.html">Grid</a></li>
               </ul>
             </li>
             <li><a href="#">Diseño gráfico</a>
               <ul>
+                <li><a href="grid.html">Grid</a></li>
                 <li><a href="tipografia.html">
                      
                     Tipografía</a></li>
-                <li><a href="colores.html">Colores</a>
-                  <li><a href="teoria-color.html">Relación de los 3 tercios</a></li>
-                  <li><a href="color-interaccion.html">El color en las interacciones</a></li>
-                </li>
+                <li><a href="colores.html">Colores / Relación de los 3 tercios / Color interacciones</a></li>
               </ul>
-              <li><a href="interacciones.html">comportamientos</a></li>
             </li>
           </ul>
           <hr>
@@ -59,7 +56,7 @@
         </nav>
         <main id="main">
           <header class="page-header">
-            <h1 class="page-title">Frameworks</h1>
+            <h1 class="page-title">Frameworks de codificación</h1>
           </header>
           <section class="section">
             <div class="container">
@@ -68,20 +65,27 @@
                   <div class="col-12 col-sm-4">
                     <h1 class="article-title">
                        
-                      Actualmente existen muchos heramientas dentro ñlksdjflkjds fksdjlfj (framework es un sistema) <strong>Los framworks es un sistema pensado para ser aplicado</strong>
+                      Un <strong>framework </strong>se traduce como<strong>
+                         
+                        marco o entorno de trabajo.</strong><br><br>En el ámbito de la codificación es un <strong>conjunto de reglas y estructuras predefinidas que ayudan a prototipar y codificar más rápido.</strong><br><br>Comparte muchas similitudes con un <strong>sistema de diseño</strong>, pero está más orientado al proceso de codificación.<br><br>Permite al frontend developer <strong>reaprobechar piezas de código</strong>y acostumbran a tener un enfoque basado en el la práctica.
                     </h1>
                   </div>
                   <div class="col-12 col-sm-8">
                     <div class="slider">
                       <div class="owl-slider owl-carousel">
                         <div class="item">
-                          <figure><img src="public/images/elpais-visual.jpg" class="img-responsive">
-                            <figcaption>Web diario El País - www.elpais.com</figcaption>
+                          <figure><img src="public/images/bootstrap.png" class="img-responsive">
+                            <figcaption><strong>Bootstrap</strong>, creado por el equipo de desarrollo de Twitter es uno de los frameworks más populares.</figcaption>
                           </figure>
                         </div>
                         <div class="item">
-                          <figure><img src="public/images/elpais-codigo.jpg" class="img-responsive">
-                            <figcaption>Código fuente web El País - www.elpais.com</figcaption>
+                          <figure><img src="public/images/foundation.png" class="img-responsive">
+                            <figcaption><strong>Foundation</strong>dispone de muchos plugins que permiten ampliar el framework.</figcaption>
+                          </figure>
+                        </div>
+                        <div class="item">
+                          <figure><img src="public/images/atom-pattern-lab.png" class="img-responsive">
+                            <figcaption>Pattern Lab de Atomic Design.</figcaption>
                           </figure>
                         </div>
                       </div>
@@ -93,51 +97,37 @@
           </section>
           <section class="section">
             <div class="container">
+              <hr class="dotted">
               <article class="article"> 
                 <div class="row">
-                  <div class="col-12 col-sm-4">
-                    <h1 class="page-title text-right"><strong>HTML</strong></h1>
-                  </div>
                   <div class="col-12 col-sm-4"><br>
-                    <p><strong>Hypertext Markup Language</strong><br><br>Lenguage basado en etiquetas que se abren y cierran, donde el continente delimita y asigna valor al contenido.</p>
+                    <h1 class="article-title"><strong>Preprocesadores de código</strong></h1><br>
+                    <p>Se trata de un software que validad el codigo creado y lo procesa para que el resultante sea compatibles con todos los navegadores y/o reproductores.<br>En el caso de los CSS se acostumbra a trabajar con <a href="http://lesscss.org/" target="_blank">LESS </a>o <a href="https://sass-lang.com/guide" target="_blank">SCSS</a><br>
+                      <ul class="list dot-list">
+                        <li>Permite la herencia de estilos.</li>
+                        <li>Ayuda a modularizar mejor las hojas de estilos.</li>
+                        <li>Permite el uso de variables.</li>
+                        <li>Permite realizar operaciones numéricas.</li>
+                        <li>Permite el uso de funciones y bucles.</li>
+                        <li>Permite detectar los herrores de codigo con anterioridad.</li>
+                        <li>Reduce la cantidad de código.</li>
+                      </ul>
+                    </p>
                   </div>
                   <div class="col-12 col-sm-4">
-                    <p><br>&lt;html&gt;&lt;/html&gt;<br>&lt;header&gt;&lt;/header&gt;<br>&lt;body&gt;&lt;/body&gt;<br>&lt;header&gt;&lt;/header&gt;<br>&lt;h1&gt;&lt;/h1&gt;<br>&lt;p&gt;&lt;/p&gt;</p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-12 col-sm-4">
-                    <h1 class="page-title text-right"><strong>CSS</strong></h1>
-                  </div>
-                  <div class="col-12 col-sm-4"><br>
-                    <p> <strong>Cascading Style Sheet</strong><br><br>Lenguage basado atributos que se asocian a una etiqueta HTML mediante una clase o identificador.<br><br>La posición de la clase en la hoja de estilos delimita su gerarquia en base al resto de definciones.</p>
+                    <iframe width="100%" height="520" src="https://jsfiddle.net/PaladiniDigitalProjects/9ncrLey6/1/embedded/css/" allowfullscreen="allowfullscreen" allowpaymentrequest="" frameborder="0" class="iframe"></iframe>
                   </div>
                   <div class="col-12 col-sm-4">
-                    <p><br>.titular {<br> font-family: Helvetica;<br> color: red;<br> font-size: 34px;<br>}</p>
+                    <iframe width="100%" height="520" src="https://jsfiddle.net/PaladiniDigitalProjects/uay4dge0/embedded/css/" allowfullscreen="allowfullscreen" allowpaymentrequest="" frameborder="0" class="iframe"></iframe>
                   </div>
-                </div>
-              </article>
-            </div>
-          </section>
-          <section class="section">
-            <div class="container">
-              <article class="article"><br>
-                <hr><br>
-                <div class="row">
-                  <div class="col-12 col-sm-9">
-                    <h1 class="page-title">Libreias de jquery
-                      <El>termino nace en conbtarposicion al backend developer dentro de un aistema informatico</El>
-                    </h1>
-                  </div>
-                  <div class="col-12 col-sm-3"></div>
                 </div>
               </article>
             </div>
           </section>
           <footer class="page-footer">
             <ul class="footer-nav">
-              <li class="prev"><a href="modulacion.html"><-- Modulación</a></li>
-              <li class="next"><a href="layout.html">Layout --> </a></li>
+              <li class="prev"><a href="frameworks.html"><-- Frameworks</a></li>
+              <li class="next"><a href="modulacion.html">Modulación --> </a></li>
             </ul>
           </footer>
         </main>

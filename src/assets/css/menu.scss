@@ -118,7 +118,6 @@ ul {
 
   &.active-sidebar{
     opacity: 0.25;
-    background: #000 !important;
     @include media(lg){
       opacity: 1;
     }
