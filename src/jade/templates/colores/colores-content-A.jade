@@ -1,13 +1,40 @@
 section.section
-  span
-    |https://ibm-design-language.eu-de.mybluemix.net/design/language/experience/visual/color/
-  br
-  br
-  span
-    |Relación de los 3 tercios / Color interacciones
-  br
-  br
-  span
-    |Optimizing typography is optimizing readability, accessibility, usability(!), overall graphic balance.
-    |https://uxplanet.org/10-tips-on-typography-in-web-design-13a378f4aa0d
-  
+  .container
+    article.article
+      .row
+        .col-12.col-sm-4
+          br
+          h1.article-title
+            | En las webs La importancia de la tipografía por que define al gerarquia visual y la interficie de us
+            strong
+              | bold, 
+            | regular.
+        .col-12.col-sm-4
+          figure
+            img.img-responsive(src='public/images/rgb.jpg')
+            figcaption
+              | RGB: Red, Gren, Blue. Digital representations of images are generally produced using light in the RGB color model. RGB is a light additive color model, meaning that colors have to be added together to produce lighter colors and ultimately white.
+        .col-12.col-sm-4
+          .slider
+            .owl-slider.owl-carousel
+              .item
+                figure
+                  img.img-responsive(src='public/images/monochrome.jpg')
+                  figcaption
+                    | Monocromatico
+              .item
+                figure
+                  img.img-responsive(src='public/images/analogous.jpg')
+                  figcaption
+                    | Análogo
+              .item
+                figure
+                  img.img-responsive(src='public/images/complementary.jpg')
+                  figcaption
+                    | Complementario
+              .item
+                figure
+                  img.img-responsive(src='public/images/triadic.jpg')
+                  figcaption
+                    | Triádico
+          
