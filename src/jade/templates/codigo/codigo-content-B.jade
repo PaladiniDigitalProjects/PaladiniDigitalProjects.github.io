@@ -1,13 +1,16 @@
 section.section
   .container
+    hr.dotted
     article.article 
       .row
-        .col-12.col-sm-4
-          h1.page-title.text-right
+        .col-12.col-sm-2
+          br
+          h1.page-title
             strong
               | HTML
         
         .col-12.col-sm-4
+          br
           br
           p
             strong
@@ -16,28 +19,17 @@ section.section
             br
             | Lenguaje basado en etiquetas que se abren y cierran. La etiqueta contiene información y al mismo tiempo asigna valor al contenido.
             
-        .col-12.col-sm-4
-          
-          p
-            br
-            |#{"<html></html>"}
-            br 
-            |#{"<header></header>"}
-            br 
-            |#{"<body></body>"}
-            br 
-            |#{"<header></header>"}
-            br 
-            |#{"<h1></h1>"}
-            br
-            |#{"<p></p>"}
-      
+        .col-12.col-sm-6
+          br
+          iframe.iframe(width='100%', height='330', src='http://jsfiddle.net/PaladiniDigitalProjects/d2yo79ag/3/embedded/html/', allowfullscreen='allowfullscreen', allowpaymentrequest='', frameborder='0')
       .row
-        .col-12.col-sm-4
-          h1.page-title.text-right
+        .col-12.col-sm-2
+          br
+          h1.page-title
             strong
               | CSS
         .col-12.col-sm-4
+          br
           br
           p 
             strong
@@ -49,18 +41,6 @@ section.section
             br
             | La posición de la clase en la hoja de estilos delimita su giraría en base al resto de definiciones.
         
-        .col-12.col-sm-4
-          p
-            br
-            |.titular {
-            br
-            |  font-family: Helvetica;
-            br
-            |  color: red;
-            br
-            |  font-size: 34px;
-            br
-            |#{'}'}
-          
-        
-        
+        .col-12.col-sm-6
+          br
+          iframe.iframe(width='100%', height='230', src='https://jsfiddle.net/PaladiniDigitalProjects/kmq61od8/1/embedded/css/', allowfullscreen='allowfullscreen', allowpaymentrequest='', frameborder='0')

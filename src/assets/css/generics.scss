@@ -210,6 +210,32 @@ margin-bottom: 1.5rem;
   }
 }
 
+.ordered-list-modulos {
+  margin:1rem 0 0 0;
+  display: block;
+  li {
+    counter-increment: step-counter;
+    display:block;
+    position: relative;
+    margin-left: 20px;
+    @include font-size(18);
+    line-height: 1.25;
+margin-bottom: 1.5rem;
+    &:before {
+      position: absolute;
+      top:-10;
+      left:-20px;
+      content: counter(step-counter);
+      color: $black;
+      font-family: $primary-bold;
+
+    }
+  }
+}
+
+
+
+
 .text-left { text-align: left !important;}
 .text-right { text-align: right !important;}
 .no-border {border:none !important;}
@@ -221,6 +247,8 @@ strong { font-family: $primary-bold; }
 
 /* ITALIC */
 em { font-family: $primary-italic; }
+
+span.light { font-family: $primary-light; }
 
 /* IMG */
 img {
@@ -285,9 +313,18 @@ iframe.iframe {
   color:$black;
   margin:2rem 0;
   padding: 1rem 1.5rem 0.85rem 1.5rem;
-  border-radius:3px;
+  border-radius:0;
+  border:1px solid black;
   &:hover{
     background:$silver;
+  }
+  &.black {
+    background: $black;
+    color:$white;
+    &:hover{
+      background:$silver;
+      color:$black;
+    }
   }
 }
 
@@ -298,4 +335,80 @@ iframe.iframe {
 .subtitle {
   font-family:$primary-bold;
   @include font-size(19);
+}
+
+a {
+  &.active {
+    border-bottom:1px dotted $black;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+ul.colores-modulos {
+  display: block;
+  li {
+    display:block;
+    @include font-size(17);
+    line-height: 50px;
+    margin-bottom: 3.2rem;
+    display: table;
+    text-indent: 20px;
+    span {
+      display: table-cell;
+      vertical-align: middle;
+      width: 75px;
+      height: 50px;
+      &.primario {
+        background-color: $primary;
+        border:1px solid $silver;
+      }
+      &.secundario {
+        background-color: $secondary;
+        border:1px solid $secondary;
+      }
+      &.terciario {
+        background-color: $tertiary;
+        border:1px solid $tertiary;
+      }
+    }
+
+  }
+}
+
+.menu-modulos {
+  text-align: center;
+  button#menu {
+    display: block;
+    position: relative;
+    top:15px;
+    right: -10px;
+  }
+  img.img-svg {
+    width: 20px;
+    height: 30px;
+    margin: 0.5rem auto;
+  }
+}
+
+.grid-modulos {
+  .col-1,
+  .col-4,
+  .col-6,
+  .col-3,
+  .col-8 {
+    background: $silver;
+    text-align: center;
+
+    border-right:7px solid white;
+    border-left:8px solid white;
+  }
+
+  p {
+    text-align: center;
+    padding: 2.5rem 0 0 0;
+    line-height: 30px;
+    font-family: $primary-bold;
+  }
 }

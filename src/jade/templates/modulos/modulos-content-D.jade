@@ -2,61 +2,87 @@ section.section
   article.article
     .container
       .row
-        .col-12.col-sm-4
-          h2.article-title
-            | Listado
-          ul.list
-            li
-              a(href="#")
-                |Item 1
-            li
-              a(href="#")
-                | Item 2
-            li
-              a(href="#")
-                |Item 3
-            li
-              a(href="#")
-                |Item 4
-            li
-              a(href="#")
-                |Item 5
-          
-        .col-12.col-sm-4
-          h2.article-title
-            | Listado con bullets
-          ul.list.dot-list
-            li
-              a(href="#")
-                |Item 1
-            li
-              a(href="#")
-                | Item 2
-            li
-              a(href="#")
-                |Item 3
-            li
-              a(href="#")
-                |Item 4
-            li
-              a(href="#")
-                |Item 5
-        .col-12.col-sm-4
-          h2.article-title
-            | Listado de definiciones
-          dl.list
-            dt
-              strong
-                |Titular 1
-            dd
-              | Definición 1
-            dt
-              strong
-                |Titular 2
-            dd
-              |Definicion 2
-            dt
-              strong
-                |Titular 3
-            dd
-              |Definicion 3
+        .col-12.col-sm-6
+          p
+            strong
+              | Normas y valores
+          p
+            | Este sistema ha sido pensado para que sea neutro, y destaque al máximo las figuras / imágenes de los ejemplos. Se ha buscado un diseño funcional.
+            br
+            br
+            | A nivel de texnología se a trabajado con 
+            em
+              |JADE (node.js) 
+            |para el HTML y los includes, y con
+            em
+              |Sass 
+            |para los estilos CSS. 
+            br
+            | La rejilla es el de 
+            em
+              |Bootsrap,
+            |el resto esta echo desde cero.
+            br
+            |Como repositorio de versiones se ha utilizado 
+            em
+              |Github.
+            br
+                
+        .col-6.col-sm-3
+          p
+            strong
+              | Colores
+          ul.colores-modulos
+            li 
+              span.primario
+              | Primario
+            li 
+              span.secundario
+              | Secundario
+            li 
+              span.terciario
+              | Terciario
+        .col-6.col-sm-2
+          p
+            strong
+              | Enlaces
+          br
+          a(href='#' alt='enlace') Enlace básico
+          br
+          br
+          br
+          a.active(href='#' alt='enlace') Enlace activo
+          br
+          br
+          br
+          br
+          a.btn.btn-default(href='#' alt='Emprezar')
+            | Botón -->
+          br
+          br
+          br
+          br
+          a.btn.btn-default.black(href='#' alt='Emprezar')
+            | Botón -->
+        
+        .col-3.col-sm-1
+          p
+            strong
+              | Iconos
+          .menu-modulos
+            button#menu
+              span.bar1
+              span.bar2
+              span.bar3
+            br
+            br
+            button#menu.menu-on
+              span.bar1
+              span.bar2
+              span.bar3
+            br
+            br
+            img.img-svg(src='public/images/prev-ico.svg')
+            br
+            br
+            img.img-svg(src='public/images/next-ico.svg')

@@ -1,39 +1,76 @@
 section.section
-  article.article
-    .container
-      h1.article-title
-        | Tipografía
-      .row
+  .container
+    article.article
+      .row    
+        .col-6.col-sm-2
+          p
+            strong
+              | Listado con bullets
+          ul.list.dot-list
+            li
+              a(href="#")
+                |Item
+            li
+              a(href="#")
+                | Item
+            li
+              a(href="#")
+                |Item 
+            li
+              a(href="#")
+                |Item
+            li
+              a(href="#")
+                |Item 
+        .col-6.col-sm-2
+          p
+            strong
+              | Listado ordenado
+          ol.list.ordered-list-modulos
+            li
+              a(href="#")
+                | Item
+            li
+              a(href="#")
+                | Item
+            li
+              a(href="#")
+                | Item
+            li
+              a(href="#")
+                |Item 
+            li
+              a(href="#")
+                |Item
+                        
+        .col-6.col-sm-2
+          p
+            strong
+              | Listado de definiciones
+          dl.list
+            dt
+              strong
+                |Título
+            dd
+              | Definición definición
+            dt
+              strong
+                |Titulo
+            dd
+              |Definición definición
+            dt
+              strong
+                |Título
+            dd
+              |Definición definición
+        
         .col-12.col-sm-6
-          h2.page-title
-            | Titular principal
-          h3.subtitle
-            | ljlkjljklk
-        .col-12.col-sm-6
-          strong
-            | Párrafo
-          p Material Design is a visual language that synthesizes the classic principles of good design with the innovation of technology and science.
-      .row
-        .col-12.col-sm-4
-          h1
-            |Targetas gráficas
-          .card
-            figure
-              img.img-responsive(data-src='public/images/imagen-pesada.jpg', alt='Heavy metal')
-            h2.card-title
-              | Sistema
-            p Material Design is a visual language that synthesizes the classic principles of good design with the innovation of technology and science.
-        .col-12.col-sm-4
-          .card
-            figure
-              img.img-responsive(data-src='public/images/imagen-pesada.jpg', alt='Heavy metal')
-            h2.card-title
-              | Sistema
-            p Material Design is a visual language that synthesizes the classic principles of good design with the innovation of technology and science.
-        .col-12.col-sm-4
-          .card
-            figure
-              img.img-responsive(data-src='public/images/imagen-pesada.jpg', alt='Heavy metal')
-            h2.card-title
-              | Sistema
-            p Material Design is a visual language that synthesizes the classic principles of good design with the innovation of technology and science.
+          p
+            strong
+              | Texto destacado
+          blockquote.destacado
+            p
+              | “Texto destacado entre comillas y potente”
+            br
+            span.firma 
+              | Nombre Apellido (año), Publicación

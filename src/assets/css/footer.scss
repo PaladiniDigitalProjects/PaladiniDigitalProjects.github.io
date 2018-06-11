@@ -41,3 +41,34 @@
 		}
 	}
 }
+
+.page-footer-modulos{
+	border-top:1px solid $light-grey;
+	@include font-size(14);
+	background: $white;
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid $light-grey;
+
+	ul {
+		li {
+			display: inline-block;
+			line-height: 3;
+			margin: 1rem;
+			&.prev {
+				float: left;
+				margin-right: 0;
+			}
+
+			&.next {
+				float: right;
+				margin-left: 0;
+			}
+			span {
+				display:none;
+				color:$grey;
+				padding: 0 1rem;
+			}
+		}
+	}
+}
