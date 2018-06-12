@@ -117,11 +117,15 @@ body {
 }
 
 p.inicio {
-  @include font-size(32);
+  @include font-size(22);
   line-height: 1.4;
   letter-spacing: 0.025rem;
   margin-bottom: 4rem;
   font-family: $primary-light;
+  @include media(sm){
+    @include font-size(32);
+    line-height: 1.4;
+  }
 }
 
 .container {
