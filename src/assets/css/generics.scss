@@ -345,6 +345,7 @@ a {
   &.active {
     border-bottom:1px dotted $black;
     &:hover {
+      border-bottom: none;
       text-decoration: none;
     }
   }

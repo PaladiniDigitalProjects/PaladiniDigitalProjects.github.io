@@ -60,7 +60,7 @@ table {
     line-height: 1.4;
     margin-bottom: 2rem;
     display: block;
-    color: #5e5e5e; }
+    color: #343434; }
   .article .article-title {
     font-size: 2rem;
     font-size: 20px;
@@ -535,6 +535,7 @@ iframe.iframe {
 a.active {
   border-bottom: 1px dotted #343434; }
   a.active:hover {
+    border-bottom: none;
     text-decoration: none; }
 
 ul.colores-modulos {
@@ -2842,6 +2843,7 @@ nav.menu-sidebar {
       nav.menu-sidebar ul li a.active {
         border-bottom: 1px dotted #343434; }
         nav.menu-sidebar ul li a.active:hover {
+          border-bottom: none;
           text-decoration: none; }
       nav.menu-sidebar ul li ul {
         margin-left: 1rem;
