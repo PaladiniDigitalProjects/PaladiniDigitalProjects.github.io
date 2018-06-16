@@ -134,7 +134,8 @@ table {
   .article .card .card-title {
     font-size: 1.85rem;
     font-size: 18.5px;
-    margin-bottom: 1.25rem; }
+    margin-bottom: 1.25rem;
+    font-family: "Akkurat-Bold", "Helvetica", sans-serif; }
   .article .card.card-volumen {
     padding: 1rem;
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);

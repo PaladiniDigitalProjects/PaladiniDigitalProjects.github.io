@@ -91,6 +91,7 @@
     .card-title {
       @include font-size(18.5);
       margin-bottom: 1.25rem;
+      font-family: $primary-bold;
     }
 
     &.card-volumen {
